@@ -1,0 +1,82 @@
+html, body
+{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  background-color: #3F3B34;
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+}
+
+#about-links, #tool-links
+{
+  height: 0px;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+#about-links a, #tool-links a
+{
+  font-weight: 300;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.vertical-nav-links
+{
+  margin: 0px;
+  line-height: 1.5em;
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 14pt;
+}
+
+a
+{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  color: #FFF;
+  text-decoration: none;
+}
+
+a:hover
+{
+  text-decoration: underline;
+}
+
+#hs-logo
+{
+  max-width: 400px;
+  height: auto;
+}
+
+#center-container
+{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+@media all and (max-width: 600px) and (min-width: 0px)
+{
+  #hs-logo
+  {
+    display: block;
+    width: 90%;
+    height: auto;
+    margin: auto;
+  }
+
+  #center-container
+  {
+    width: 90%;
+    top: 10%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+}

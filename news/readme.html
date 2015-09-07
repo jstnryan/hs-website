@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>SuperSimpleNews 1.0 Read Me</title>
+<link type="text/css" rel="stylesheet" href="resources/SyntaxHighlighter.css" />
+<style type="text/css">
+<!--
+body {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+-->
+</style>
+</head>
+<body>
+<h1>SuperSimpleNews 1.0 Read Me</h1>
+<h2>Introduction</h2>
+<p>SuperSimpleNews 1.0 is an Open-source (GPL2) PHP based news script which doesn't require a database as all news articles are stored in simple CSV files. As the name depicts, this is a very simple script which includes a password protected administrative backend for adding, editing and deleting articles. For editing the text the brilliant <a href="http://www.themaninblue.com/" target="_blank">widgEditor</a> is utilised for it's lightweight simplicity and effectiveness. Example scripts are included to get you setup quickly. RSS support is included by default.</p>
+<h2>Installation</h2>
+<ol>
+  <li>Copy all the files to your server location, ie www.yourwebsite.com/<strong>newsadmin</strong>/ <strong>Remember</strong>:This will be the location of your back-end admin panel not the news page (front-end).</li>
+  <li>Locate the config file 'includes/config.inc.php' (relative to your upload folder) and enter your settings to suit your website and server configuration. You'll notice a 'news_encoding' setting which should be noted because you may have issues with your character encoding if your 'POST' encoding is different from your page encoding!</li>
+  <li>You can now access the back-end by accessing the root of your installation folder. Enter you password and you can start adding news articles!</li>
+  <li>You will now want to intergrate the script into your website. For this examples have been provided (see below) which demonstrate how the 'newsTools' class is accessed to display headlines and a news page.</li>
+  <li>You don't need the 'resources' folder for the script to work on your server, this is only used for the code highlighting on this page.</li>
+</ol>
+<h2>Examples</h2>
+<p>The RSS Feed file can be found <a href="rss.php">here</a>. When setting up your system all paths should be relative to you config and class files found in the 'includes' folder.</p>
+<h3>Headlines Example</h3>
+<p>A working copy of the headlines file can be found <a href="examples/headlines.php">here</a>. </p>
+<textarea name="code" class="php" rows="" cols="">
+&lt;?php
+	//get news class and array
+	include_once('newsadmin/includes/newsTools.class.inc.php');
+	$newsTools 		= new newsTools('csv/news.csv');
+	//a limit of 4 headlines is passed to the function
+	$news_headlines = $newsTools->getNewsArray(4);
+	//output news array as formatted html
+	if (!count($news_headlines)&gt;0){
+		echo 'There are currently no news headlines.';
+	}else{
+		foreach ($news_headlines as $key =&gt; $item){
+			list($news_id,$news_date,$news_title,$news_body) = $item;
+			$formatted_date = date('d.m.y',$news_date);
+			echo $formatted_date.' - '.$news_title.'&lt;br /&gt;';
+		}
+	}
+?&gt;
+</textarea>
+<h4>Example News Page</h4>
+<p>a working copy of the News page can be found <a href="examples/newspage.php"> here</a>.</p>
+<textarea name="code" class="php" rows="" cols="">
+&lt;?php
+	//get news class and array
+	include_once('newsadmin/includes/newsTools.class.inc.php');
+	$newsTools 		= new newsTools('csv/news.csv');
+	$news_headlines = $newsTools-&gt;getNewsArray();
+	//output news array as formatted html
+	if (!count($news_headlines)&gt;0){
+		echo '&lt;p&gt;There are currently no news headlines.&lt;/p&gt;';
+	}else{
+		foreach ($news_headlines as $key =&gt; $item){
+			list($news_id,$news_date,$news_title,$news_body) = $item;
+			$formatted_date = date('F j, Y, g:i a',$news_date);
+echo &lt;&lt;&lt;HTML
+  	&lt;a name="$news_id" id="$news_id"&gt;&lt;/a&gt;
+	&lt;h3&gt;$news_title&lt;/h3&gt;
+    $news_body
+	&lt;p&gt;&lt;em&gt;Posted: $formatted_date&lt;/em&gt;&lt;/p&gt;
+	&lt;hr /&gt;
+HTML;
+		}
+	}
+?&gt;
+</textarea>
+<h2>Feedback</h2>
+<p>Please contact me via <a href="http://www.monkeymatt.com">monkeymatt.com</a> if you have any feedback, recommendations or have found a bug.</p>
+<script language="javascript" type="text/javascript" src="resources/shCore.js"></script>
+<script language="javascript" type="text/javascript" src="resources/shBrushPhp.js"></script>
+<script language="javascript" type="text/javascript">
+dp.SyntaxHighlighter.ClipboardSwf = '/resources/clipboard.swf';
+dp.SyntaxHighlighter.HighlightAll('code');
+</script>
+</body>
+</html>

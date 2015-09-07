@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SSCE Hyperspace</title>
+  <meta name="description" content="The one and only SubSpace Continuum zone: SSCE Hyperspace." />
+  <meta name="keywords" content="SSCE Hyperspace,Subspace Continuum,Subspace Continuum zone" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300' rel='stylesheet' type='text/css' />
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400' rel='stylesheet' type='text/css' />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="style.css?f=1" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script>
+  var about_opened = false;
+  var tools_opened = false;
+  var about_open_toggle = function() {
+    if (about_opened) {
+      $("#about-links").animate({height: '0px'}, 500);
+      $("#about-link").hover(function(evt) {
+        $("#about-link").css("text-decoration", evt.type == "mouseenter" ? "underline" : "none");
+      });
+      about_opened = false;
+    } else {
+      $("#about-links").animate({height: '25pt'}, 500);
+      $("#about-link").css("text-decoration", "underline");
+      $("#about-link").unbind('mouseenter mouseleave')
+      about_opened = true;
+    }
+  }
+
+  var tools_open_toggle = function() {
+    if (tools_opened) {
+      $("#tool-links").animate({height: '0px'}, 500);
+      $("#tool-link").hover(function(evt) {
+        $("#tool-link").css("text-decoration", evt.type == "mouseenter" ? "underline" : "none");
+      });
+      tools_opened = false;
+    } else {
+      $("#tool-links").animate({height: '25pt'}, 500);
+      $("#tool-link").css("text-decoration", "underline");
+      $("#tool-link").unbind('mouseenter mouseleave')
+      tools_opened = true;
+    }
+  }
+
+  $(document).ready(function() {
+    $("#tool-link").click(function() {
+      tools_open_toggle();
+      if (about_opened)
+        about_open_toggle();
+    });
+
+    $("#about-link").click(function() {
+      about_open_toggle();
+      if (tools_opened)
+        tools_open_toggle();
+    });
+  });
+  </script>
+</head>
+<body>
+  <div id="center-container">
+    <img id="hs-logo" src="hs_logo.png" />
+    <p class="vertical-nav-links" style="margin-top: 16px;">
+      <a id="about-link" href="#">ABOUT</a>
+    </p>
+    <div id="about-links">
+      <a href="#">wiki</a>
+      <a href="#">summary</a>
+      <a href="/news.html">news</a>
+    </div>
+    <p class="vertical-nav-links">
+      <a href="http://subspace.co/index.php?/forum/15-hyperspace/">FORUM</a><br/>
+      <a id="tool-link" href="#">TOOLS</a>
+    </p>
+    <div id="tool-links">
+      <a href="#">nn</a>
+      <a href="#">thor</a>
+      <a href="#">you</a>
+    </div>
+  </div>
+</body>
+</html>
