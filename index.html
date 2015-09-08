@@ -17,6 +17,7 @@
   var ref_opened = false;
   var tools_opened = false;
   var dev_opened = false;
+  var history_opened = false;
 
   var about_open_toggle = function() {
     if (about_opened) {
@@ -55,6 +56,17 @@
     }
   }
 
+  var history_open_toggle = function() {
+    if (history_opened) {
+      $("#history-links").animate({height: '0px'}, 500);
+      history_opened = false;
+    } else {
+      $("#history-links").animate({height: '23pt'}, 500);
+      $("#history-link").unbind('mouseenter mouseleave')
+      history_opened = true;
+    }
+  }
+
   var dev_open_toggle = function() {
     if (dev_opened) {
       $("#dev-links").animate({height: '0px'}, 500);
@@ -73,6 +85,8 @@
         about_open_toggle();
       if (dev_opened)
         dev_open_toggle();
+      if (history_opened)
+        history_open_toggle();
       if (ref_opened)
         ref_open_toggle();});
 
@@ -82,6 +96,8 @@
         about_open_toggle();
       if (tools_opened)
         tools_open_toggle();
+      if (history_opened)
+        history_open_toggle();
       if (ref_opened)
         ref_open_toggle();});
 
@@ -91,6 +107,19 @@
         about_open_toggle();
       if (dev_opened)
         dev_open_toggle();
+      if (history_opened)
+        history_open_toggle();
+      if (tools_opened)
+        tools_open_toggle();});
+
+    $("#history-link").click(function() {
+      history_open_toggle();
+      if (about_opened)
+        about_open_toggle();
+      if (dev_opened)
+        dev_open_toggle();
+      if (ref_opened)
+        ref_open_toggle();
       if (tools_opened)
         tools_open_toggle();});
 
@@ -100,6 +129,8 @@
         tools_open_toggle();
       if (dev_opened)
         dev_open_toggle();
+      if (history_opened)
+        history_open_toggle();
       if (ref_opened)
         ref_open_toggle();});
   });
@@ -111,7 +142,7 @@
     <a id="needHelp" href='intro.html#gameplay.html'>Need help getting started? Click here.</a><!-- "http://rshl.org/ci/index.php?c=articleview&amp;A=1001" -->
   </div>
   <div class="center-h center-v" id="center-container">
-    <img id="hs-logo" src="hs_logo.png" />
+    <img id="hs-logo" src="hs_logo.png" title="The one and only." />
     <div class="vertical-nav-links">
       <div>
         <a id="about-link" href="#">INTRODUCTION</a>
@@ -148,6 +179,12 @@
       </div>
       <div>
         <a href="http://subspace.co/index.php?/forum/15-hyperspace/" target="_blank">DISCUSSION</a>
+      </div>
+      <div>
+        <a id="history-link" href="#">POSTERITY</a>
+        <ul class="sub-links" id="history-links">
+          <li><a href="articles.html">articles</a></li>
+        </ul>
       </div>
     </div>
   </div>

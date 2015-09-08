@@ -15,14 +15,14 @@ html, body
   margin: 0px;
 }
 
-#about-links, #tool-links, #ref-links, #dev-links
+#about-links, #tool-links, #ref-links, #dev-links, #history-links
 {
   height: 0px;
   text-align: center;
   overflow: hidden;
 }
 
-#about-links a, #tool-links a, #ref-links a, #dev-links a
+#about-links a, #tool-links a, #ref-links a, #dev-links a, #history-links a
 {
   font-weight: 300;
   margin-right: 10px;
@@ -107,6 +107,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .tut {width: 640px;margin:0 auto;padding:0;}
+.tut > table {margin:0 auto;}
+.tut > .overflow {overflow:auto;}
 
 .tut-img {max-width:640px;max-height:300px;margin:0 auto;}
 
@@ -228,6 +230,9 @@ table td {
 table tr td:first-child {
   font-weight:bold;
   vertical-align: text-top; /* not really necessary, should do this to all td */
+}
+table tr td {
+  vertical-align: text-top;
 }
 table tr.even td {
 /*
