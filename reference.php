@@ -1,17 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>SSCE Hyperspace</title>
-  <meta name="description" content="The one and only SubSpace Continuum zone: SSCE Hyperspace." />
-  <meta name="keywords" content="SSCE Hyperspace,Subspace Continuum,Subspace Continuum zone" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300' rel='stylesheet' type='text/css' />
-  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400' rel='stylesheet' type='text/css' />
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" type="text/css" href="style.css" />
-</head>
-<body>
+<?php
+$pagetitle = 'Zone Reference';
+include 'inc/head.inc';
+include 'inc/menu.inc';
+?>
   <div class="center-h" id="container">
     <div id="main-content">
       <a name="staff"></a>
@@ -38,9 +29,14 @@
               <td></td>
             </tr>
             <tr>
+              <td>sri</td>
+              <td>Junior Moderator</td>
+              <td></td>
+            </tr>
+            <tr>
               <td>B.O.X.</td>
               <td>Developer</td>
-              <td></td>
+              <td>sharpflame, psythe</td>
             </tr>
             <tr>
               <td>CDB-Man</td>
@@ -64,7 +60,7 @@
             </tr>
           </tr>
         </table>
-        <p>For reference, the list of former staff members include: Rivel (jrmod), uniX (Event Coordinator), Arry (jrmod), Aquatiq (mod), Rareitanium, D1st0rt, Dr Brain</p>
+        <p>For reference, the (non-exhaustive) list of former staff members include: Rivel (jrmod), uniX (Event Coordinator), Arry (jrmod), Aquatiq (mod), Rareitanium, SpiderNL, D1st0rt, Arnk Dylie, Dr Brain</p>
       </div>
       <h1>Rules and Guidelines</h1>
       <p>Hyperspace does not have a explicit list of rules, however the following is provided as a guide to better align players with the governing vision of the Hyperspace staff.</p>
@@ -79,5 +75,4 @@
       </div>
     </div>
   </div>
-</body>
-</html>
+<?php include 'inc/foot.inc'; ?>

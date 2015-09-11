@@ -1,0 +1,71 @@
+
+    <div class="slideout">
+      <div class="closeslide slideout-toggle">
+<svg height="25px" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="25px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M437.5,386.6L306.9,256l130.6-130.6c14.1-14.1,14.1-36.8,0-50.9c-14.1-14.1-36.8-14.1-50.9,0L256,205.1L125.4,74.5  c-14.1-14.1-36.8-14.1-50.9,0c-14.1,14.1-14.1,36.8,0,50.9L205.1,256L74.5,386.6c-14.1,14.1-14.1,36.8,0,50.9  c14.1,14.1,36.8,14.1,50.9,0L256,306.9l130.6,130.6c14.1,14.1,36.8,14.1,50.9,0C451.5,423.4,451.5,400.6,437.5,386.6z"/></svg>
+      </div>
+      <div style="padding-top: 79px;">
+        <ul>
+          <li><a id="about-link" href="#">INTRODUCTION</a></li>
+          <ul class="sub-links">
+            <li><a href="intro.html#about">about</a></li>
+            <li><a href="intro.html#history">history</a></li>
+            <li><a href="intro.html#gameplay">gameplay</a></li>
+          </ul>
+          <li><a id="ref-link" href="#">REFERENCE</a></li>
+          <ul class="sub-links">
+            <li><a href="news.php">news.txt</a></li>
+            <li><a href="glossary.html">glossary</a></li>
+            <li><a href="reference.html#staff">staff</a></li>
+            <li><a href="reference.html#rules">rules</a></li>
+          </ul>
+          <li><a id="tool-link" href="#">TOOLS</a></li>
+          <ul class="sub-links">
+            <li><a href="#">browser</a></li>
+            <li><a href="#">build</a></li>
+            <li><a href="#">calc</a></li>
+          </ul>
+          <li><a id="dev-link" href="#">DEVELOPMENT</a></li>
+          <ul class="sub-links">
+            <li><a href="development.html#zone">zone</a></li>
+            <li><a href="development.html#website">website</a></li>
+            <li><a href="development.html#bot">bot</a></li>
+          </ul>
+          <li><a href="http://subspace.co/index.php?/forum/15-hyperspace/" target="_blank">DISCUSSION</a></li>
+          <li><a id="history-link" href="#">POSTERITY</a></li>
+          <ul class="sub-links">
+            <li><a href="articles.html">articles</a></li>
+          </ul>
+        </ul>
+      </div>
+    </div>
+    <div id="head">
+      <div class="slideout-toggle head_icon">
+<svg height="25px" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="25px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M417.4,224H94.6C77.7,224,64,238.3,64,256c0,17.7,13.7,32,30.6,32h322.8c16.9,0,30.6-14.3,30.6-32   C448,238.3,434.3,224,417.4,224z"/><path d="M417.4,96H94.6C77.7,96,64,110.3,64,128c0,17.7,13.7,32,30.6,32h322.8c16.9,0,30.6-14.3,30.6-32   C448,110.3,434.3,96,417.4,96z"/><path d="M417.4,352H94.6C77.7,352,64,366.3,64,384c0,17.7,13.7,32,30.6,32h322.8c16.9,0,30.6-14.3,30.6-32   C448,366.3,434.3,352,417.4,352z"/></g></svg>
+      </div>
+      <a href="http://twitter.com/sshyperspace">
+        <div class="head_icon">
+<svg width="25px" height="25px" viewBox="0 0 32 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+  <g id="twitter-logo-svg" sketch:type="MSPage">
+    <path d="M6.8468546,14.7778595 C7.13946884,14.8327653 7.44091602,14.8614382 7.74883743,14.8614382 C8.2909681,14.8614382 8.81303016,14.7725592 9.30214818,14.6081195 C6.90444045,14.2162782 5.07109641,12.0688801 5.07109641,9.47855443 C5.07109641,9.43838048 5.07153739,9.39831307 5.07241463,9.35835709 C5.78236361,9.7753633 6.60022535,10.0185403 7.47190902,10.031937 C6.03182993,9.11895802 5.07109641,7.47592616 5.07109641,5.60078546 C5.07109641,4.62721468 5.33007883,3.71621287 5.78066907,2.93747181 C8.33384413,6.09612415 12.0795876,8.1878691 16.3018208,8.47200394 C16.2244714,8.10468695 16.1837217,7.72323211 16.1837217,7.33193232 C16.1837217,4.38718727 18.4915376,2 21.3383731,2 C22.8256703,2 24.1658463,2.65156426 25.1066785,3.69379565 C26.274058,3.50197432 27.3590439,3.05429504 28.3062418,2.4080574 C27.9568348,3.6419808 27.1616641,4.67891429 26.1133073,5.31965762 C27.1395036,5.22094012 28.1090422,4.93263316 29,4.49988345 C28.3617362,5.58037564 27.5043698,6.50729073 26.4917998,7.21453212 C26.4926149,7.25356366 26.4930246,7.29269851 26.4930246,7.33193232 C26.4930246,7.43596944 26.4908563,7.83926449 26.4908563,7.93902234 C26.4908563,16.256971 19.9720256,23 11.9306395,23 C9.00545271,23 6.28173966,22.1077215 4,20.5719356 C4.40556308,20.6206158 4.8180998,20.6456403 5.23628697,20.6456403 C7.65860758,20.6456403 9.89134296,19.8060132 11.6773301,18.3927665 C9.39066593,18.3929778 7.49265825,16.8744086 6.8468546,14.7778595 Z" sketch:type="MSShapeGroup"></path>
+  </g>
+</svg>
+        </div>
+      </a>
+      <!--
+      <a href="http://facebook.com/sshyperspace">
+        <div class="head_icon">
+<svg width="25px" height="25px" viewBox="0 0 17 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+<g id="facebook-logo-svg" sketch:type="MSPage">
+  <g sketch:type="MSLayerGroup" transform="translate(1.000000, 1.000000)">
+    <g id="Layer_3" sketch:type="MSShapeGroup">
+      <path d="M9.97434501,32 L3.32300153,32 L3.32300153,15.998751 L0,15.998751 L0,10.4844168 L3.32300153,10.4844168 L3.32300153,7.17363049 C3.32300153,2.67504537 5.1993759,0 10.5303776,0 L14.9685857,0 L14.9685857,5.51495872 L12.1943915,5.51495872 C10.1191648,5.51495872 9.98188444,6.28559162 9.98188444,7.72381491 L9.97434501,10.4837923 L15,10.4837923 L14.4119249,15.9981265 L9.97434501,15.9981265 L9.97434501,32 L9.97434501,32 Z"></path>
+    </g>
+  </g>
+</g>
+</svg>
+        </div>
+      </a>
+      -->
+      <div class="clear">
+      </div>
+    </div>
