@@ -1,10 +1,10 @@
 <?php
 $pagetitle = 'Ship Guide and Quick Reference (Legacy)';
-include $_SERVER['DOCUMENT_ROOT'].'/inc/head.inc';
+include __DIR__.'/../inc/head.inc';
 ?>
 </head>
 <body id="articles">
-<?php include $_SERVER['DOCUMENT_ROOT'].'/inc/menu.inc'; ?>
+<?php include __DIR__.'/../inc/menu.inc'; ?>
   <div class="center-h" id="container">
     <div id="main-content">
       <a name="article8"></a>
@@ -351,4 +351,4 @@ include $_SERVER['DOCUMENT_ROOT'].'/inc/head.inc';
       </div>
     </div>
   </div>
-<?php include $_SERVER['DOCUMENT_ROOT'].'/inc/foot.inc'; ?>
+<?php include __DIR__.'/../inc/foot.inc'; ?>

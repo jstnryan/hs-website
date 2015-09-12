@@ -1,7 +1,8 @@
 <!-- HS website provided to the good people of SS by nn & sigma13. -->
 <?php
 $pagetitle = 'The one and only.';
-include 'inc/head.inc';
+//include $_SERVER['DOCUMENT_ROOT'].'/inc/head.inc';
+include __DIR__.'/inc/head.inc';
 ?>
   <script>
   var about_opened = false;
@@ -130,11 +131,11 @@ include 'inc/head.inc';
 <body id="index">
   <div id="getBug">
     <a id="getContinuumNow" href="http://getcontinuum.com/">Get Continuum Now!</a>
-    <a id="needHelp" href='intro.html#gameplay.html'>Need help getting started? Click here.</a><!-- "http://rshl.org/ci/index.php?c=articleview&amp;A=1001" -->
+    <a id="needHelp" href='intro.php#gameplay'>Need help getting started? Click here.</a><!-- "http://rshl.org/ci/index.php?c=articleview&amp;A=1001" -->
   </div>
   <div class="center-h center-v" id="center-container">
     <img id="hs-logo" src="hs_logo.png" title="The one and only." />
-<?php include "inc/menuitems.inc"; ?>
+<?php include __DIR__.'/inc/menuitems.inc'; ?>
   </div>
 </body>
 </html>

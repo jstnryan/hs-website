@@ -1,10 +1,10 @@
 <?php
 $pagetitle = 'news.txt';
-include 'inc/head.inc';
+include __DIR__.'/inc/head.inc';
 ?>
 </head>
 <body id="news">
-<?php include 'inc/menu.inc'; ?>
+<?php include __DIR__.'/inc/menu.inc'; ?>
   <div class="center-h" id="container">
     <div id="main-content">
       <a name="news"></a>
@@ -34,4 +34,4 @@ HTML;
 
     </div>
   </div>
-<?php include 'inc/foot.inc'; ?>
+<?php include __DIR__.'/inc/foot.inc'; ?>
