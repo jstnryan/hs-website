@@ -5,7 +5,7 @@ include 'inc/head.inc';
   </head>
   <body id="reference">
 <?php include 'inc/menu.inc'; ?>
-  <div class="center-h" id="container">
+  <div class="center-h container" id="container">
     <div id="main-content">
       <a name="staff"></a>
       <h1>Zone Staff and Key Individuals</h1>
@@ -64,6 +64,7 @@ include 'inc/head.inc';
         </table>
         <p>For reference, the (non-exhaustive) list of former staff members include: Rivel (jrmod), uniX (Event Coordinator), Arry (jrmod), Aquatiq (mod), Rareitanium, SpiderNL, D1st0rt, Arnk Dylie, Dr Brain</p>
       </div>
+      <a name="rules"></a>
       <h1>Rules and Guidelines</h1>
       <p>Hyperspace does not have a explicit list of rules, however the following is provided as a guide to better align players with the governing vision of the Hyperspace staff.</p>
       <div class="tut">

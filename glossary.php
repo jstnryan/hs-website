@@ -89,7 +89,7 @@ include 'inc/head.inc';
         </table>
       </div>
       <a name="ship-properties"></a>
-      <h1>Ship Properties</h1>
+      <h1>Ship Properties Reference</h1>
       <p>This is a list of the adjustable ship properties which can be found, for instance, when typing <i class="nowrap">?iteminfo</i> or <i class="nowrap">?shipstatus -v</i>.</p>
       <div class="tut">
         <table cellspacing="0">

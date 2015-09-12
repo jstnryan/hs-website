@@ -5,7 +5,7 @@ include 'inc/head.inc';
 </head>
 <body id="intro">
 <?php include 'inc/menu.inc'; ?>
-  <div class="center-h" id="container">
+  <div class="center-h container" id="container">
   <!--
     <div class="vertical-nav-links">
       <div>
