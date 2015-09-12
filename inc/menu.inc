@@ -3,39 +3,8 @@
       <div class="closeslide slideout-toggle">
 <svg height="25px" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="25px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M437.5,386.6L306.9,256l130.6-130.6c14.1-14.1,14.1-36.8,0-50.9c-14.1-14.1-36.8-14.1-50.9,0L256,205.1L125.4,74.5  c-14.1-14.1-36.8-14.1-50.9,0c-14.1,14.1-14.1,36.8,0,50.9L205.1,256L74.5,386.6c-14.1,14.1-14.1,36.8,0,50.9  c14.1,14.1,36.8,14.1,50.9,0L256,306.9l130.6,130.6c14.1,14.1,36.8,14.1,50.9,0C451.5,423.4,451.5,400.6,437.5,386.6z"/></svg>
       </div>
-      <div style="padding-top: 79px;">
-        <ul>
-          <li><a id="about-link" href="#">INTRODUCTION</a></li>
-          <ul class="sub-links">
-            <li><a href="intro.html#about">about</a></li>
-            <li><a href="intro.html#history">history</a></li>
-            <li><a href="intro.html#gameplay">gameplay</a></li>
-          </ul>
-          <li><a id="ref-link" href="#">REFERENCE</a></li>
-          <ul class="sub-links">
-            <li><a href="news.php">news.txt</a></li>
-            <li><a href="glossary.html">glossary</a></li>
-            <li><a href="reference.html#staff">staff</a></li>
-            <li><a href="reference.html#rules">rules</a></li>
-          </ul>
-          <li><a id="tool-link" href="#">TOOLS</a></li>
-          <ul class="sub-links">
-            <li><a href="#">browser</a></li>
-            <li><a href="#">build</a></li>
-            <li><a href="#">calc</a></li>
-          </ul>
-          <li><a id="dev-link" href="#">DEVELOPMENT</a></li>
-          <ul class="sub-links">
-            <li><a href="development.html#zone">zone</a></li>
-            <li><a href="development.html#website">website</a></li>
-            <li><a href="development.html#bot">bot</a></li>
-          </ul>
-          <li><a href="http://subspace.co/index.php?/forum/15-hyperspace/" target="_blank">DISCUSSION</a></li>
-          <li><a id="history-link" href="#">POSTERITY</a></li>
-          <ul class="sub-links">
-            <li><a href="articles.html">articles</a></li>
-          </ul>
-        </ul>
+      <div id="slidemenu">
+<?php include $_SERVER['DOCUMENT_ROOT']."/inc/menuitems.inc"; ?>
       </div>
     </div>
     <div id="head">

@@ -15,10 +15,10 @@ html, body
   margin: 0px;
 }
 
-#about-links, #tool-links, #ref-links, #dev-links, #history-links
+#index #about-links, #index #tool-links, #index #ref-links, #index #dev-links, #index #history-links
 {
   height: 0px;
-  text-align: center;
+  /* text-align: center; */
   overflow: hidden;
 }
 
@@ -48,14 +48,14 @@ a
 {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 400;
-  color: #FFF;
+  color: #3B78FF;
   text-decoration: none;
 }
 
 a:hover
 {
   //text-decoration: underline;
-  color: #3B78FF;
+  color: #FFF;
 }
 
 #hs-logo
@@ -319,10 +319,12 @@ table.nostyle td.right {
 {
      /* background-color: #f3f3f3; */
 }
-.head_icon svg {
+.head_icon svg,
+.slideout .closeslide svg {
   fill: rgba(255, 255, 255, 0.6);
 }
-.head_icon:hover svg {
+.head_icon:hover svg,
+.slideout .closeslide:hover svg {
   fill: #3B78FF;
 }
 
@@ -333,59 +335,81 @@ table.nostyle td.right {
      top: 0;
 
      /* left: -300px; */
-     right: -400px;
-     width: 400px;
+     right: -320px;
+     width: 319px;
+     border: 1px #ddd solid;
+     border-radius: 10px;
 
      /* height: 100%; */
-     height: 300px;
+     /* height: 300px; */
 
-     /* background-color: #fbfbfb; */ background-color:rgba(96,96,96,0.7);
+     background-color:rgba(59,59,59,0.9);
      z-index: 300;
 }
 .closeslide
 {
      float: right;
      /* width: 40px; */
-     padding: 14px 17px 14px 14px; /* 15px 15px 11px 15px; */
+     padding: 14px 17px 14px 14px;
      cursor: pointer;
 }
 .slideout ul
 {
 	list-style: none;
-	padding: 0;
+/*
+  padding: 0;
 	margin: 0;
      font: 300 10px/1 Merriweather, serif;
 	letter-spacing: 2px;
 	text-transform: uppercase;
 
   display: block;
+  */
 }
 .slideout ul li a
 {
+/*
      position: relative;
      display: block;
      padding: 14px 0 14px 14px;
-     /* color: #555; */
      text-decoration: none;
+     */
 }
 .slideout ul li a:hover, .closeslide:hover
 {
 	/* background-color: #f3f3f3; */
-  color: #3B78FF;
 }
 
 .slideout ul {
+/*
   font-size: 14px;
+  */
 }
+/*
 .slideout>ul li {
   display: inline-block;
   float: left;
 }
-.slideout ul>li::after {clear:both;content:"";}
+*/
+/* .slideout ul>li::after {clear:both;content:"";} */
+/*
 .slideout ul>ul {
   margin: 10px;
   font-size: 10px;
   float:right;
+}
+*/
+#slidemenu {
+  margin-top: 60px;
+}
+#slidemenu .vertical-nav-links
+{
+  font-size: 12pt;
+  margin: 0 10px;
+}
+#slidemenu .sub-links {
+  float:none;
+  margin-bottom: 10px;
 }
 
 

@@ -1,17 +1,8 @@
 <!-- HS website provided to the good people of SS by nn & sigma13. -->
-<!DOCTYPE html>
-<html>
-<head>
-  <title>SSCE Hyperspace</title>
-  <meta name="description" content="The one and only SubSpace Continuum zone: SSCE Hyperspace." />
-  <meta name="keywords" content="SSCE Hyperspace,Subspace Continuum,Subspace Continuum zone" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300' rel='stylesheet' type='text/css' />
-  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400' rel='stylesheet' type='text/css' />
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" type="text/css" href="style.css" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<?php
+$pagetitle = 'The one and only.';
+include 'inc/head.inc';
+?>
   <script>
   var about_opened = false;
   var ref_opened = false;
@@ -136,57 +127,14 @@
   });
   </script>
 </head>
-<body>
+<body id="index">
   <div id="getBug">
     <a id="getContinuumNow" href="http://getcontinuum.com/">Get Continuum Now!</a>
     <a id="needHelp" href='intro.html#gameplay.html'>Need help getting started? Click here.</a><!-- "http://rshl.org/ci/index.php?c=articleview&amp;A=1001" -->
   </div>
   <div class="center-h center-v" id="center-container">
     <img id="hs-logo" src="hs_logo.png" title="The one and only." />
-    <div class="vertical-nav-links">
-      <div>
-        <a id="about-link" href="#">INTRODUCTION</a>
-        <ul class="sub-links" id="about-links">
-          <li><a href="intro.html#about">about</a></li>
-          <li><a href="intro.html#history">history</a></li>
-          <li><a href="intro.html#gameplay">gameplay</a></li>
-        </ul>
-      </div>
-      <div>
-        <a id="ref-link" href="#">REFERENCE</a>
-        <ul class="sub-links" id="ref-links">
-          <li><a href="news.php">news.txt</a></li>
-          <li><a href="glossary.html">glossary</a></li>
-          <li><a href="reference.html#staff">staff</a></li>
-          <li><a href="reference.html#rules">rules</a></li>
-        </ul>
-      </div>
-      <div>
-        <a id="tool-link" href="#">TOOLS</a>
-        <ul class="sub-links" id="tool-links">
-          <li><a href="#">browser</a></li>
-          <li><a href="#">build</a></li>
-          <li><a href="#">calc</a></li>
-        </ul>
-      </div>
-      <div>
-        <a id="dev-link" href="#">DEVELOPMENT</a>
-        <ul class="sub-links" id="dev-links">
-          <li><a href="development.html#zone">zone</a></li>
-          <li><a href="development.html#website">website</a></li>
-          <li><a href="development.html#bot">bot</a></li>
-        </ul>
-      </div>
-      <div>
-        <a href="http://subspace.co/index.php?/forum/15-hyperspace/" target="_blank">DISCUSSION</a>
-      </div>
-      <div>
-        <a id="history-link" href="#">POSTERITY</a>
-        <ul class="sub-links" id="history-links">
-          <li><a href="articles.html">articles</a></li>
-        </ul>
-      </div>
-    </div>
+<?php include "inc/menuitems.inc"; ?>
   </div>
 </body>
 </html>

@@ -1,8 +1,10 @@
 <?php
 $pagetitle = 'Zone Reference';
 include 'inc/head.inc';
-include 'inc/menu.inc';
 ?>
+  </head>
+  <body id="reference">
+<?php include 'inc/menu.inc'; ?>
   <div class="center-h" id="container">
     <div id="main-content">
       <a name="staff"></a>

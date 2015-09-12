@@ -1,3 +1,3 @@
-    <script src="hs.js"></script>
+    <script src="/hs.js"></script>
   </body>
 </html>
