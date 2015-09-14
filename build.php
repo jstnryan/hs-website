@@ -6,8 +6,10 @@ include __DIR__.'/inc/head.inc';
     <style>
     /*
       ul { display: inline-block; }
+    */
       li:hover { cursor: pointer; }
       li:hover:after { content: ' [x]'; }
+    /*
       p { line-height: 0.1em; }
       table { border-collapse: collapse; border: 1pt solid black; }
       tr:nth-child(odd) { background-color: #cccccc; }
