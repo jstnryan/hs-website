@@ -2,8 +2,8 @@
     <div id="foot" class="container">
       <div id="nav-tools">
         <img id="foot-logo" src="/hs_logo.png"><br>
-        <form id="search">
-          <input name="q" type="search" id="search-box" placeholder="Search Hyperspace">
+        <form id="search" action="search.php">
+          <input name="q" type="search" id="tipue_search_input" placeholder="Search Hyperspace" required>
         </form>
       </div>
       <nav id="site-map" role="navigation">
@@ -28,7 +28,7 @@
           <li>Tools
             <ul>
               <li>browser</li>
-              <li>build</li>
+              <li><a href="/build.php">Ship Builder</a></li>
               <li>calc</li>
             </ul>
           </li>

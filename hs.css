@@ -1,0 +1,304 @@
+/* ************************************************************************** */
+/*
+    Logo: #FFFFFF, #3B78FF
+    Background: #3B3B3B [Original: #3F3B34]
+*/
+/* ************************************************************************** */
+html, body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  background-color: #3b3b3b; /*rgba: (59,59,59,1); nn original: #3F3B34; */
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+}
+#index #about-links, #index #tool-links, #index #ref-links, #index #dev-links, #index #history-links {
+  height: 0px;
+  /* text-align: center; */
+  overflow: hidden;
+}
+#about-links a, #tool-links a, #ref-links a, #dev-links a, #history-links a {
+  font-weight: 300;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.vertical-nav-links {
+  margin: 0px;
+  line-height: 1.5em;
+  text-align: left;
+  letter-spacing: 2px;
+  font-size: 14pt;
+}
+ul.sub-links {margin:0;padding:0;float:right;font-size:10pt;}
+ul.sub-links li {display:inline-block;}
+a {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  color: #3B78FF;
+  text-decoration: none;
+}
+a:hover {
+  //text-decoration: underline;
+  color: #FFF;
+}
+#hs-logo {
+  max-width: 400px;
+  height: auto;
+}
+#center-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  max-width:760px;
+}
+#container,
+.container {
+  max-width:760px;
+  margin: 20px auto;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  color: #DDD;
+  text-decoration: none;
+  line-height: 1.5em;
+  text-align: left;
+  letter-spacing: 2px;
+  font-size: 10pt;
+}
+h1, h2, h3, h4, h5, h6 {
+  color: #FFF;
+  font-weight: 400;
+  text-transform:uppercase;
+}
+#container h1 {
+  margin-top: 2em;
+  font-size: 14pt;
+}
+#container h2 {
+  margin-top: 2em;
+  font-size: 12pt;
+}
+#container h3 {
+  margin-top: 2em;
+  font-size: 10pt;
+}
+.tut {width: 640px;margin:0 auto;padding:0;}
+.tut > table {margin:0 auto;}
+.tut > .overflow {overflow:auto;}
+.tut-img {max-width:640px;max-height:300px;margin:0 auto;}
+.news-headline {background-color:rgba(255,255,255,0.1);}
+.news-author {float:right;}
+th {white-space:nowrap;}
+.nowrap {white-space:nowrap;}
+
+
+hr.section-division {
+  width: 760px;
+  margin: 40px auto;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(221, 221, 221, 0), rgba(221, 221, 221, 0.75), rgba(221, 221, 221, 0));
+}
+
+
+/* ************************************************************************** */
+/* Footer                                                                     */
+/* ************************************************************************** */
+#cat-main > li {
+  text-transform: uppercase;
+}
+#cat-main > li li {
+  text-transform: none;
+}
+#foot-logo {
+  width: 100%;
+}
+#nav-tools {
+  width: 360px;
+  float: left;
+}
+#site-map {
+  width: 360px;
+  float: right;
+}
+#search input[type="search"] {
+  width: 100%;
+  border: 0 none;
+  background-image: url('data:image/svg+xml;utf8,<svg height="32px" version="1.1" viewBox="0 0 32 32" width="32px" xmlns="http://www.w3.org/2000/svg" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" xmlns:xlink="http://www.w3.org/1999/xlink"><title/><desc/><defs/><g fill="none" fill-rule="evenodd" id="Page-1" stroke="none" stroke-width="1"><g fill="#157EFB" id="icon-111-search"><path d="M19.4271164,21.4271164 C18.0372495,22.4174803 16.3366522,23 14.5,23 C9.80557939,23 6,19.1944206 6,14.5 C6,9.80557939 9.80557939,6 14.5,6 C19.1944206,6 23,9.80557939 23,14.5 C23,16.3366522 22.4174803,18.0372495 21.4271164,19.4271164 L27.0119176,25.0119176 C27.5621186,25.5621186 27.5575313,26.4424687 27.0117185,26.9882815 L26.9882815,27.0117185 C26.4438648,27.5561352 25.5576204,27.5576204 25.0119176,27.0119176 L19.4271164,21.4271164 L19.4271164,21.4271164 Z M14.5,21 C18.0898511,21 21,18.0898511 21,14.5 C21,10.9101489 18.0898511,8 14.5,8 C10.9101489,8 8,10.9101489 8,14.5 C8,18.0898511 10.9101489,21 14.5,21 L14.5,21 Z" id="search"/></g></g></svg>'); /* https://www.iconfinder.com/icons/314689/search_icon#size=16 */
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #ddd;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 10pt;
+  /* width: 150px; */
+  margin: 20px 0;
+  padding: 2px 6px 2px 22px;
+  border-radius: 10px;
+  /* text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3); */
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+  -webkit-transition: all 0.7s ease 0s;
+  -moz-transition: all 0.7s ease 0s;
+  -o-transition: all 0.7s ease 0s;
+  transition: all 0.7s ease 0s;
+}
+#search input[type="search"]:focus {
+  outline: none;
+}
+
+
+/* ************************************************************************** */
+/* Special, sexy table styles                                                 */
+/* ************************************************************************** */
+table {
+	font-size:12px;
+}
+table th {
+	padding:5px 10px;
+	background: rgba(255,255,255,0.2);
+  text-transform:uppercase;
+}
+table th:first-child {
+	text-align: left;
+	padding-left: 10px;
+}
+table tr {
+  text-align: left;
+  padding-left: 10px;
+}
+table th.center,
+table td.center {
+	text-align: center;
+	padding-left:10px;
+}
+table th.right,
+table td.right {
+	text-align: right;
+	padding-right:10px;
+}
+table td:first-child {
+	text-align: left;
+	padding-left:10px;
+	border-left: 0;
+}
+table td {
+	padding:5px 10px;
+	border-top: 1px solid #666;
+	border-left: 1px solid #666;
+}
+table tr td:first-child {
+  font-weight:bold;
+  vertical-align: text-top; /* not really necessary, should do this to all td */
+}
+table tr td {
+  vertical-align: text-top;
+}
+table tr:last-child td {
+	border-bottom:0;
+}
+table tr:hover td {
+	background: rgba(255,255,255,0.1);
+}
+
+table.nostyle {
+  border:0;margin:0 -20px;padding:0;background:none;box-shadow:none;
+}
+table.nostyle td {
+  white-space:nowrap;
+}
+table.nostyle td.right {
+  text-align:right;
+}
+
+
+/* ************************************************************************** */
+/* Fixed top menu icons and slide out menu                                    */
+/* ************************************************************************** */
+#head {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 120px;
+  /* background-color: #fff;
+  opacity: 0.96; *//
+  z-index: 100;
+}
+.head_icon {
+  float: left;
+  cursor: pointer;
+  padding: 14px; /* 14px 12px 13px; */
+}
+.head_icon:hover {/* background-color: #f3f3f3; */}
+.head_icon svg,
+.slideout .closeslide svg {
+  fill: rgba(255, 255, 255, 0.6);
+}
+.head_icon:hover svg,
+.slideout .closeslide:hover svg {
+  fill: #3B78FF;
+}
+
+/*  SLIDEOUT MENU */
+.slideout {
+  position: fixed;
+  top: 0;
+  /* left: -300px; */
+  right: -380px;
+  width: 380px;
+  /* height: 100%; */
+  z-index: 300;
+}
+.closeslide {
+  float: right;
+  padding: 14px 17px 14px 14px;
+  cursor: pointer;
+}
+#slideclose {
+  float: right;
+  width: 29px;
+  background-color: #2F2F2F;
+  border-radius: 0 10px 10px 0;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+}
+#slidemenu {
+  float: left;
+  width: 320px;
+  background-color: #2F2F2F;
+  border-radius: 10px 0 10px 10px;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+  padding: 10px 0;
+}
+#slidemenu .vertical-nav-links {
+  font-size: 12pt;
+  margin: 0 10px;
+}
+#slidemenu .sub-links {
+  float:none;
+  margin-bottom: 10px;
+}
+
+
+/* ************************************************************************** */
+/* TODO: Need to check all mobile stuff. Haven't even touched this yet.       */
+/* ************************************************************************** */
+@media all and (max-width: 600px) and (min-width: 0px)
+{
+  #hs-logo {
+    display: block;
+    width: 90%;
+    height: auto;
+    margin: auto;
+  }
+
+  #center-container {
+    width: 90%;
+    top: 10%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+}

@@ -19,9 +19,9 @@
           <div>
             <a id="tool-link" href="#">TOOLS</a>
             <ul class="sub-links" id="tool-links">
-              <li><a href="#">browser</a></li>
-              <li><a href="#">build</a></li>
-              <li><a href="#">calc</a></li>
+              <li>browser</li>
+              <li><a href="/build.php">build</a></li>
+              <li>calc</li>
             </ul>
           </div>
           <div>

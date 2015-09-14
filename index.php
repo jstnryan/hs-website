@@ -4,6 +4,73 @@ $pagetitle = 'The one and only.';
 //include $_SERVER['DOCUMENT_ROOT'].'/inc/head.inc';
 include __DIR__.'/inc/head.inc';
 ?>
+  <style>
+    #getContinuumNow {
+      position: absolute;
+      display: block;
+      top: 0;
+      right: 5%;
+      padding: 0 10px 0 48px;
+      background: rgba(0,0,0,0.15);
+      //border-radius: 0 0 3px 3px;
+      border: 1px solid rgba(255,255,255,0.5);
+      border-top: none;
+      font-size: 1.25em;
+      color: #fff;
+      line-height:34px;
+      text-decoration: none;
+      transition: color 200ms ease-out;
+    }
+    #getContinuumNow:hover { color: #84b3eb; }
+    #getContinuumNow:before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 10px;
+      height: 40px;
+      width:29px;
+      background:url("SSLogoSmall.png");
+      background-repeat: no-repeat;
+      transition: none;
+    }
+    #getContinuumNow:hover:before {
+      transform: rotateY(360deg);
+      transition: transform 600ms ease-out;
+    }
+    #getContinuumNow:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.6);
+      transition: none;
+    }
+    #getContinuumNow:hover:after {
+      width: 100%;
+      background-color: rgba(255,255,255,0);
+      transition: all 300ms ease-out;
+    }
+    #needHelp {
+      position: absolute;
+      display: block;
+      top: 40px;
+      right: 5%;
+      padding: 0 5px 0 6px;
+      background: rgba(0,0,0,0.15);
+      border-radius: 0 0 4px 4px;
+      border: 1px solid rgba(255,255,255,0.5);
+      font-size: 0.887em;
+      color: #fff;
+      line-height:19px;
+      text-decoration: none;
+      transition: color 200ms ease-out;
+    }
+    #needHelp:hover { color: #84b3eb; }
+  </style>
   <script>
   var about_opened = false;
   var ref_opened = false;

@@ -36,23 +36,33 @@ include __DIR__.'/inc/head.inc';
               <td></td>
             </tr>
             <tr>
+              <td>kevinz</td>
+              <td>Junior Moderator</td>
+              <td></td>
+            </tr>
+            <tr>
               <td>B.O.X.</td>
               <td>Developer</td>
               <td>sharpflame, psythe</td>
             </tr>
             <tr>
               <td>CDB-Man</td>
-              <td>Developer</td>
+              <td>Item Developer</td>
               <td>CDB, CDB-Phone</td>
             </tr>
             <tr>
               <td>nn</td>
-              <td>Zone Helper</td>
+              <td>Zone Helper, Web Developer</td>
               <td></td>
             </tr>
             <tr>
               <td>monkey</td>
               <td>Bot Developer</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>irvel</td>
+              <td>Zone Mascot</td>
               <td></td>
             </tr>
             <tr>
