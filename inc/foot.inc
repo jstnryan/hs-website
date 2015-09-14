@@ -2,7 +2,7 @@
     <div id="foot" class="container">
       <div id="nav-tools">
         <img id="foot-logo" src="/hs_logo.png"><br>
-        <form id="search" action="search.php">
+        <form id="search" action="/search.php">
           <input name="q" type="search" id="tipue_search_input" placeholder="Search Hyperspace" required>
         </form>
       </div>

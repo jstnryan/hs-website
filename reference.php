@@ -22,7 +22,7 @@ include __DIR__.'/inc/head.inc';
           <tbody>
             <tr>
               <td>Ceiu</td>
-              <td>SysOp</td>
+              <td>SysOp, Lead Developer</td>
               <td>Cerium</td>
             </tr>
             <tr>
@@ -57,7 +57,7 @@ include __DIR__.'/inc/head.inc';
             </tr>
             <tr>
               <td>monkey</td>
-              <td>Bot Developer</td>
+              <td>Bot Developer, Web Developer</td>
               <td></td>
             </tr>
             <tr>

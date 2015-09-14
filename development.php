@@ -1,5 +1,5 @@
 <?php
-$pagetitle = 'Developer Information';
+$pagetitle = 'Development Information';
 include __DIR__.'/inc/head.inc';
 ?>
 </head>

@@ -103,6 +103,24 @@ hr.section-division {
 }
 
 
+select {
+  border: 0 none;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #ddd;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 10pt;
+  margin: 5px 0;
+  padding: 2px 6px 2px 6px;
+  border-radius: 10px;
+  /*
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+  */
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+}
+select option { background-color: #333; }
+
+
 /* ************************************************************************** */
 /* Special, sexy table styles                                                 */
 /* ************************************************************************** */
@@ -275,10 +293,12 @@ table.nostyle td.right {
   -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
   -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+  /*
   -webkit-transition: all 0.7s ease 0s;
   -moz-transition: all 0.7s ease 0s;
   -o-transition: all 0.7s ease 0s;
   transition: all 0.7s ease 0s;
+  */
 }
 #search input[type="search"]:focus {
   outline: none;
@@ -288,6 +308,7 @@ table.nostyle td.right {
 /* ************************************************************************** */
 /* TODO: Need to check all mobile stuff. Haven't even touched this yet.       */
 /* ************************************************************************** */
+/*
 @media all and (max-width: 600px) and (min-width: 0px)
 {
   #hs-logo {
@@ -304,3 +325,4 @@ table.nostyle td.right {
     transform: translateX(-50%);
   }
 }
+*/
