@@ -16,7 +16,7 @@
 //    You should have received a copy of the GNU General Public License
 //    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-$admin_password = '931282'; // admin password
+$admin_password = 'admin'; // admin password
 $admin_salt	 	= 'Wb25o1BkVj'; //random text to strengthen password storage
 $user_name 		= 'admin'; //your name (for news page and rss)
 $page_title		= 'News Admin'; //title of admin.php

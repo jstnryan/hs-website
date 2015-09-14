@@ -14,76 +14,89 @@ include __DIR__.'/inc/head.inc';
         <table cellspacing="0">
           <thead>
             <tr>
-                <th>Term</th>
-                <th>Meaning and Usage</th>
+              <th>Term</th>
+              <th>Meaning and Usage</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-                <td>ad, AD</td>
-                <td>May refer to:
-                  <ul>
-                    <li>Anti-Death - Often during flag games, Lancaster ship pilots (or those with Evoker) will announce "ad" upon a death, informing their teammates who may be waiting to <i class="nowrap">/?attach</i> that they have to wait until they've respawned.</li>
-                    <li>Advance - Also during flag games, teammates may announce "ad" to encourage the team to advance toward the enemy or flag room. This variation is more often than not used in a sentence, as opposed to alone, such as, "smalls ad."</li>
-                  </ul>
-                </td>
+              <td>ad, AD</td>
+              <td>May refer to:
+                <ul>
+                  <li>Anti-Death - Often during flag games, Lancaster ship pilots (or those with Evoker) will announce "ad" upon a death, informing their teammates who may be waiting to <i class="nowrap">/?attach</i> that they have to wait until they've respawned.</li>
+                  <li>Advance - Also during flag games, teammates may announce "ad" to encourage the team to advance toward the enemy or flag room. This variation is more often than not used in a sentence, as opposed to alone, such as, "smalls ad."</li>
+                </ul>
+              </td>
             </tr>
             <tr>
-                <td>anchor</td>
-                <td>Refers to the ship on the flagging team to which the team attaches aftear death to warp back to the flagging base, or to the action of attaching to the anchor ship.<br>Syn: lanc, evoker</td>
+              <td>at, AT</td>
+              <td>May refer to:
+                <ul>
+                  <li>Alien Technology - A category of purchasable ship modification items.</li>
+                  <li>Attach - Although rare, some players will use the abbreviated word to ask other teammates to attach to their ship.<br>See also: anchor</li>
+                </ul>
+              </td>
             </tr>
             <tr>
-                <td>buff</td>
-                <td>To increase the capability or performance of something.<br>Ant: nerf</td>
+              <td>anchor</td>
+              <td>Refers to the ship on the flagging team to which the team attaches aftear death to warp back to the flagging base, or to the action of attaching to the anchor ship.<br>Syn: lanc, evoker</td>
             </tr>
             <tr>
-                <td>center, c, sector0</td>
-                <td>The area at the center of the zone map. Center does not have a flagging base, but initially all flags are placed here. This area is generally used for standard dogfighting.</td>
+              <td>buff</td>
+              <td>To increase the capability or performance of something.<br>Ant: nerf</td>
             </tr>
             <tr>
-                <td>drop</td>
-                <td>When a ship is carrying flags, the flags will "drop" when the flag timer expires. The location they are dropped determines ownership of the flags. Flags dropped in a <i>flag room</i> are claimed by the team. Flags dropped outside of a flag room are <i>neuted</i>, or not owned by anyone. Typically, drop refers to the former.<br>Ant: neut</td>
+              <td>center, c, sector0</td>
+              <td>The area at the center of the zone map. Center does not have a flagging base, but initially all flags are placed here. This area is generally used for standard dogfighting.</td>
             </tr>
             <tr>
-                <td>evo, evoker</td>
-                <td>Evoker is the item that can be added to certain ships which allows other ships to attach with no energy penalty. Teammates may announce "evo" when they want to you attach to them.</td>
+              <td>drop</td>
+              <td>When a ship is carrying flags, the flags will "drop" when the flag timer expires. The location they are dropped determines ownership of the flags. Flags dropped in a <i>flag room</i> are claimed by the team. Flags dropped outside of a flag room are <i>neuted</i>, or not owned by anyone. Typically, drop refers to the former.<br>Ant: neut</td>
             </tr>
             <tr>
-                <td><span class="nowrap">flag room</span>, fr</td>
-                <td>The area most central to a base, where flags can be <i>dropped</i> to retain team ownership.</td>
+              <td>evo, evoker</td>
+              <td>Evoker is the item that can be added to certain ships which allows other ships to attach with no energy penalty. Teammates may announce "evo" when they want to you attach to them.</td>
             </tr>
             <tr>
-                <td>jp, jackpot</td>
-                <td>The reward purse for the next completed flag game. The jackpot can be seen (if it is not disabled) by typing <i>?jackpot</i>, however the actual jackpot amount to be rewarded at the end of a flag game is affected by a mathematical formula, and will be different than the number displayed.</td>
+              <td><span class="nowrap">flag room</span>, fr</td>
+              <td>The area most central to a base, where flags can be <i>dropped</i> to retain team ownership.</td>
             </tr>
             <tr>
-                <td>lanc, lancaster</td>
-                <td>Litterally used to refer to the Lancaster ship type, however because of the <i>?lancs</i> command, sometimes is used as a blanket term to describe any ship with Evoker capability that can be attached to.<br>Syn: anchor, evoker</td>
+              <td>jp, jackpot</td>
+              <td>The reward purse for the next completed flag game. The jackpot can be seen (if it is not disabled) by typing <i>?jackpot</i>, however the actual jackpot amount to be rewarded at the end of a flag game is affected by a mathematical formula, and will be different than the number displayed.</td>
             </tr>
             <tr>
-                <td>nerf</td>
-                <td>To decrease the capability or performance of something.<br>Ant: buff</td>
+              <td>lanc, lancaster</td>
+              <td>Litterally used to refer to the Lancaster ship type, however because of the <i>?lancs</i> command, sometimes is used as a blanket term to describe any ship with Evoker capability that can be attached to.<br>Syn: anchor, evoker</td>
             </tr>
             <tr>
-                <td>neut, neutral</td>
-                <td>May refer to:
-                  <ul>
-                    <li>A flag that has been dropped outside of a <i>flag room</i>, or an unclaimed flag.</li>
-                    <li>The act of <i>dropping</i> a flag in a way that ensures it is not claimed by the team, such as changing ships or team-killing.<br>Ant: drop</li>
-                  </ul>
-                </td>
+              <td>nerf</td>
+              <td>To decrease the capability or performance of something.<br>Ant: buff</td>
             </tr>
             <tr>
-                <td>op</td>
-                <td>An abbreviation for 'over powered.' Generally used referring to one or more items in an itemset that are throught to have been made too strong, in comparisson to other items.</td>
+              <td>neut, neutral</td>
+              <td>May refer to:
+                <ul>
+                  <li>A flag that has been dropped outside of a <i>flag room</i>, or an unclaimed flag.</li>
+                  <li>The act of <i>dropping</i> a flag in a way that ensures it is not claimed by the team, such as changing ships or team-killing.<br>Ant: drop</li>
+                </ul>
+              </td>
             </tr>
             <tr>
-                <td>pd, PD</td>
-                <td>An abbreviation for Point Defense, the item that adds an automated turret to a ship.</td>
+              <td>op</td>
+              <td>An abbreviation for 'over powered.' Generally used referring to one or more items in an itemset that are throught to have been made too strong, in comparisson to other items.</td>
             </tr>
             <tr>
-                <td>smalls</td>
-                <td>The smaller sized ships, ie the Warbird and Javelin. Often these ships are used for <i>rushing</i>, and a teammate will announce "ad smalls," to encourage pilots in small ships to advance. Smalls can attach to larger ships.</td>
+              <td>pd, PD</td>
+              <td>An abbreviation for Point Defense, the item that adds an automated turret to a ship.</td>
+            </tr>
+            <tr>
+              <td>sig, signature</td>
+              <td>Some of the ship items which can be purchased are considered 'signature items.' These items are part of a group of specialized items, of which each ship can only (typically) carry one at a time. In the <i>?buy</i> menus, these items' descriptions begin with <b>[S]</b>.</td>
+            </tr>
+            <tr>
+              <td>smalls</td>
+              <td>The smaller sized ships, ie the Warbird and Javelin. Often these ships are used for <i>rushing</i>, and a teammate will announce "ad smalls," to encourage pilots in small ships to advance. Smalls can attach to larger ships.</td>
             </tr>
           </tbody>
         </table>

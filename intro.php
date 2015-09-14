@@ -90,42 +90,105 @@ include __DIR__.'/inc/head.inc';
           </thead>
           <tbody>
             <tr>
-              <td>?listnewb</td>
-              <td>Retrieve a list of players the staff has 'called out.'</td>
+              <td>?bountytype</td>
+              <td>Cycle through the available bounty display modes (Bounty, Exp, and Money).</td>
             </tr>
             <tr>
-              <td>?help</td>
-              <td>Get live help from the staff currently online.</td>
+              <td>?buy [ category | item ]</td>
+              <td>Displays the list of items available for purchase. Including the optional <i>category name</i> displays a list of purchasable items in that category, while including the optional <i>item name</i> purchases that item.</td>
             </tr>
             <tr>
-              <td>?lag</td>
-              <td>Retrieve stats on your current connection to the server.</td>
+              <td>?chat</td>
+              <td>Get a list of players enrolled in your chat channels.</td>
+            </tr>
+            <tr>
+              <td>?chat=&lt;chatname&gt;</td>
+              <td>Create or join the specified chat channel.</td>
+            </tr>
+            <tr>
+              <td>?iteminfo &lt;item&gt;</td>
+              <td>Get the description and properties of a purchasable item.</td>
+            </tr>
+            <tr>
+              <td>?kill</td>
+              <td>Cycle through the available Continuum kill message modes (Center, Chat, Off).</td>
+            </tr>
+            <tr>
+              <td>?killmessages</td>
+              <td>Enable or disable Hyperspace kill messages. Hyperspace kill messages are only displayed for your kills, and your teammates' kills that earn you money or exp.</td>
             </tr>
             <tr>
               <td>?ping</td>
               <td>Check the various ping times between you and the server.</td>
             </tr>
-<!--
-?listnewb <---see who the mods hate
-?help <---get urgent help from mods online
-?lag <---see how badly your messing up the game
-?spec <----who's stalking you
-?ping <----like ?lag only with different numbers
-?squadjoin squadname:squadpass <---join squads
-?squadkick <---squad owners only, punt your evils
-?squadlist <---squad owners only, see who's in your squad
-?squadleave <---they'll be sad to see you go
-?squadcreate squadname:squadpass <---you can too!
-?flags <----where be the moon beams?!
-?chat <---who's in your chat?
-?chat=(chat name) <----creates/joins chats
-?shipstatus <---what did I buy?
-?status <----it goes fast
-?iteminfo (item name) <----see what it does
-?killmessages <--HS kill/money,exp
-?kill <--Continuum kill msg
-?bountytype <--Cycle between Bty/Exp/Money
--->
+            <tr>
+              <td>?flag</td>
+              <td>Join the flagging game (the server will place you on one of the designated flag frequencies).</td>
+            </tr>
+            <tr>
+              <td>?flags</td>
+              <td>Get a list of players carrying flags, and/or a count of uncarried flags.</td>
+            </tr>
+            <tr>
+              <td>?ping</td>
+              <td>Check the various ping times between you and the server.</td>
+            </tr>
+            <tr>
+              <td>?help</td>
+              <td>Get live help from the staff members currently online.</td>
+            </tr>
+            <tr>
+              <td>?lag</td>
+              <td>Retrieve stats on your current connection to the server.</td>
+            </tr>
+            <!--
+            <tr>
+              <td>?listnewb</td>
+              <td>Retrieve a list of players the staff has 'called out.'</td>
+            </tr>
+            -->
+            <tr>
+              <td>?ping</td>
+              <td>Check the various ping times between you and the server.</td>
+            </tr>
+            <tr>
+              <td>?shipstatus [ -v ]</td>
+              <td>Get a list of items equiped on your ship. Including the optional <i>-v</i> (verbose) switch will also display the complete ship properties your ship.</td>
+            </tr>
+            <tr>
+              <td>?spec</td>
+              <td>Get the list of players viewing your ship from spectator mode.</td>
+            </tr>
+            <tr>
+              <td>?status</td>
+              <td>Displays the Recharge, Thruster, Speed, Rotation, and Shrapnel properties of your current ship, expressed in percentages.</td>
+            </tr>
+            <!--
+            <tr>
+              <td>?squadcreate &lt;squadname&gt;:&lt;squadpassword&gt;</td>
+              <td>Create a new squad.</td>
+            </tr>
+            -->
+            <tr>
+              <td>?squadjoin <br>&lt;name&gt;:&lt;password&gt;</td>
+              <td>Join an existing squad.</td>
+            </tr>
+            <!--
+            <tr>
+              <td>?squadkick</td>
+              <td>Allows a squad owner to remove a player from his/her squad.</td>
+            </tr>
+            -->
+            <tr>
+              <td>?squadleave</td>
+              <td>Leave your currently enrolled squad.</td>
+            </tr>
+            <!--
+            <tr>
+              <td>?squadlist</td>
+              <td>For squad owners, shows a list of people in your squad.</td>
+            </tr>
+            -->
           </tbody>
         </table>
       </div>

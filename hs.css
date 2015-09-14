@@ -99,55 +99,7 @@ hr.section-division {
   border: 0;
   height: 1px;
   background-image: linear-gradient(to right, rgba(221, 221, 221, 0), rgba(221, 221, 221, 0.75), rgba(221, 221, 221, 0));
-}
-
-
-/* ************************************************************************** */
-/* Footer                                                                     */
-/* ************************************************************************** */
-#cat-main > li {
-  text-transform: uppercase;
-}
-#cat-main > li li {
-  text-transform: none;
-}
-#foot-logo {
-  width: 100%;
-}
-#nav-tools {
-  width: 360px;
-  float: left;
-}
-#site-map {
-  width: 360px;
-  float: right;
-}
-#search input[type="search"] {
-  width: 100%;
-  border: 0 none;
-  background-image: url('data:image/svg+xml;utf8,<svg height="32px" version="1.1" viewBox="0 0 32 32" width="32px" xmlns="http://www.w3.org/2000/svg" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" xmlns:xlink="http://www.w3.org/1999/xlink"><title/><desc/><defs/><g fill="none" fill-rule="evenodd" id="Page-1" stroke="none" stroke-width="1"><g fill="#157EFB" id="icon-111-search"><path d="M19.4271164,21.4271164 C18.0372495,22.4174803 16.3366522,23 14.5,23 C9.80557939,23 6,19.1944206 6,14.5 C6,9.80557939 9.80557939,6 14.5,6 C19.1944206,6 23,9.80557939 23,14.5 C23,16.3366522 22.4174803,18.0372495 21.4271164,19.4271164 L27.0119176,25.0119176 C27.5621186,25.5621186 27.5575313,26.4424687 27.0117185,26.9882815 L26.9882815,27.0117185 C26.4438648,27.5561352 25.5576204,27.5576204 25.0119176,27.0119176 L19.4271164,21.4271164 L19.4271164,21.4271164 Z M14.5,21 C18.0898511,21 21,18.0898511 21,14.5 C21,10.9101489 18.0898511,8 14.5,8 C10.9101489,8 8,10.9101489 8,14.5 C8,18.0898511 10.9101489,21 14.5,21 L14.5,21 Z" id="search"/></g></g></svg>'); /* https://www.iconfinder.com/icons/314689/search_icon#size=16 */
-  background-position: top left;
-  background-repeat: no-repeat;
-  background-size: 20px;
-  background-color: rgba(0, 0, 0, 0.2);
-  color: #ddd;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 10pt;
-  /* width: 150px; */
-  margin: 20px 0;
-  padding: 2px 6px 2px 22px;
-  border-radius: 10px;
-  /* text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3); */
-  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
-  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
-  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
-  -webkit-transition: all 0.7s ease 0s;
-  -moz-transition: all 0.7s ease 0s;
-  -o-transition: all 0.7s ease 0s;
-  transition: all 0.7s ease 0s;
-}
-#search input[type="search"]:focus {
-  outline: none;
+  clear: both;
 }
 
 
@@ -193,6 +145,7 @@ table td {
 table tr td:first-child {
   font-weight:bold;
   vertical-align: text-top; /* not really necessary, should do this to all td */
+  white-space: nowrap;
 }
 table tr td {
   vertical-align: text-top;
@@ -280,6 +233,55 @@ table.nostyle td.right {
 #slidemenu .sub-links {
   float:none;
   margin-bottom: 10px;
+}
+
+
+/* ************************************************************************** */
+/* Footer                                                                     */
+/* ************************************************************************** */
+#cat-main > li {
+  text-transform: uppercase;
+}
+#cat-main > li li {
+  text-transform: none;
+}
+#foot-logo {
+  width: 100%;
+}
+#nav-tools {
+  width: 360px;
+  float: left;
+}
+#site-map {
+  width: 360px;
+  float: right;
+}
+#search input[type="search"] {
+  width: 100%;
+  border: 0 none;
+  background-image: url('data:image/svg+xml;utf8,<svg height="32px" version="1.1" viewBox="0 0 32 32" width="32px" xmlns="http://www.w3.org/2000/svg" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" xmlns:xlink="http://www.w3.org/1999/xlink"><title/><desc/><defs/><g fill="none" fill-rule="evenodd" id="Page-1" stroke="none" stroke-width="1"><g fill="#157EFB" id="icon-111-search"><path d="M19.4271164,21.4271164 C18.0372495,22.4174803 16.3366522,23 14.5,23 C9.80557939,23 6,19.1944206 6,14.5 C6,9.80557939 9.80557939,6 14.5,6 C19.1944206,6 23,9.80557939 23,14.5 C23,16.3366522 22.4174803,18.0372495 21.4271164,19.4271164 L27.0119176,25.0119176 C27.5621186,25.5621186 27.5575313,26.4424687 27.0117185,26.9882815 L26.9882815,27.0117185 C26.4438648,27.5561352 25.5576204,27.5576204 25.0119176,27.0119176 L19.4271164,21.4271164 L19.4271164,21.4271164 Z M14.5,21 C18.0898511,21 21,18.0898511 21,14.5 C21,10.9101489 18.0898511,8 14.5,8 C10.9101489,8 8,10.9101489 8,14.5 C8,18.0898511 10.9101489,21 14.5,21 L14.5,21 Z" id="search"/></g></g></svg>'); /* https://www.iconfinder.com/icons/314689/search_icon#size=16 */
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #ddd;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 10pt;
+  /* width: 150px; */
+  margin: 20px 0;
+  padding: 2px 6px 2px 22px;
+  border-radius: 10px;
+  /* text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3); */
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+  -webkit-transition: all 0.7s ease 0s;
+  -moz-transition: all 0.7s ease 0s;
+  -o-transition: all 0.7s ease 0s;
+  transition: all 0.7s ease 0s;
+}
+#search input[type="search"]:focus {
+  outline: none;
 }
 
 
