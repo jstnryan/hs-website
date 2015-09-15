@@ -37,6 +37,7 @@
               <li><a href="/development.php#zone">Zone Server and Configuration</a></li>
               <li><a href="/development.php#website">Website</a></li>
               <li><a href="/development.php#bot">Monkeybot</a></li>
+              <li><a href="/development.php#chatnet-for-android">ChatNet for Android</a></li>
               <li><a href="/development.php#other">Other Projects</a></li>
             </ul>
           </li>

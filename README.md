@@ -9,11 +9,8 @@ Things to do:
 - MAKE A FULL TUTORIAL (incl. download game, directory servers, connecting to zone, etc..)!
 - Tidy up code / compress where relevant
 - build the remaining "tools" utilities
-- style monkey's Ship Builder
 - touch up the style for the top navigation
-- build the search keywords database
-- style the search results
-- everything else I'm missing
+- finish styling the search results page
 
 Justin Ryan (sigma13)
 http://jstnryan.com

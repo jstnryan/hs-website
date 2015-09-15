@@ -29,6 +29,48 @@ include __DIR__.'/inc/head.inc';
         <li>Bots should not be annoying. Bots may "taunt," however the 'cooldown' period should be set to a reasonable length of time. Real players can be annoying enough as it is.</li>
         <li>Bots should identify themselves as bots by responding to the <i>!owner</i> command with the player name of the bot's operator.</li>
       </ul>
+      <h3>Common Bots</h3>
+      <p>The following are the AI bots can sometimes be found in the zone, and their owners/operators.</p>
+      <div class="tut">
+        <table cellspacing="0">
+          <thead>
+            <tr>
+              <th>Owner</th>
+              <th>Bot(s)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Baked Cake</td>
+              <td></td>
+            </tr>
+          <tbody>
+            <tr>
+              <td>kevinz</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>monkey</td>
+              <td>taz, X FORCE</td>
+            </tr>
+            <tr>
+              <td>nn</td>
+              <td>who.cares</td>
+            </tr>
+            <tr>
+              <td>Pity.</td>
+              <td>Baby Bot Back, Botham Knight</td>
+            </tr>
+            <tr>
+              <td>sigma13</td>
+              <td>dosed, desod</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <a name="chatnet-for-android"></a>
+      <h2>ChatNet for Android</h2>
+      <p>Although not open source, <a href="https://play.google.com/store/apps/details?id=com.k3nn37h.chatnet">ChatNet for Android</a> was written so that anyone can connect to Hyperspace on the go. All you need is an Android device running v2.3.4 or above, and you can Hyperspec with the best players. It was developed and is maintained by dest_matter, and CDB-Man, using Ceiu's jcnlib (see below).</p>
       <a name="other-dev"></a>
       <h2>Other Projects</h2>
       <p>There are a lot of talented people in the Subspace community. Here is a quick list of other interesting projects to have a look at:</p>
