@@ -416,7 +416,6 @@ ShipBuilder.prototype.display = function() {
   if (!table) {
     table = document.createElement('table');
     table.id = 'property-table';
-    table.id = 'property-table';
     z = document.createAttribute('cellspacing');
     z.value = '0';
     table.setAttributeNode(z);

@@ -25,11 +25,11 @@
               <li><a href="/reference.php#rules">Rules and Guidelines</a></li>
             </ul>
           </li>
-          <li>Tools
+          <li><a href="/tools.php">Tools</a>
             <ul>
-              <li>browser</li>
+              <li>Browser</li>
               <li><a href="/build.php">Ship Builder</a></li>
-              <li>calc</li>
+              <li>Calc</li>
             </ul>
           </li>
           <li><a href="/development.php">Development</a>

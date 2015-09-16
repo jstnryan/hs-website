@@ -12,6 +12,8 @@ html, body {
   width: 100%;
   margin: 0px;
 }
+.nav-category { text-transform: uppercase; }
+.sub-links li { text-transform: lowercase; }
 #index #about-links, #index #tool-links, #index #ref-links, #index #dev-links, #index #history-links {
   height: 0px;
   /* text-align: center; */

@@ -86,7 +86,7 @@ include __DIR__.'/inc/head.inc';
       //});
       about_opened = false;
     } else {
-      $("#about-links").animate({height: '23pt'}, 500);
+      $("#about-links").animate({height: '28px'}, 500);
       //$("#about-link").css("text-decoration", "underline");
       $("#about-link").unbind('mouseenter mouseleave')
       about_opened = true;
@@ -98,7 +98,7 @@ include __DIR__.'/inc/head.inc';
       $("#ref-links").animate({height: '0px'}, 500);
       ref_opened = false;
     } else {
-      $("#ref-links").animate({height: '23pt'}, 500);
+      $("#ref-links").animate({height: '28px'}, 500);
       $("#ref-link").unbind('mouseenter mouseleave')
       ref_opened = true;
     }
@@ -109,7 +109,7 @@ include __DIR__.'/inc/head.inc';
       $("#tool-links").animate({height: '0px'}, 500);
       tools_opened = false;
     } else {
-      $("#tool-links").animate({height: '23pt'}, 500);
+      $("#tool-links").animate({height: '28px'}, 500);
       $("#tool-link").unbind('mouseenter mouseleave')
       tools_opened = true;
     }
@@ -120,7 +120,7 @@ include __DIR__.'/inc/head.inc';
       $("#history-links").animate({height: '0px'}, 500);
       history_opened = false;
     } else {
-      $("#history-links").animate({height: '23pt'}, 500);
+      $("#history-links").animate({height: '28px'}, 500);
       $("#history-link").unbind('mouseenter mouseleave')
       history_opened = true;
     }
@@ -131,7 +131,7 @@ include __DIR__.'/inc/head.inc';
       $("#dev-links").animate({height: '0px'}, 500);
       dev_opened = false;
     } else {
-      $("#dev-links").animate({height: '23pt'}, 500);
+      $("#dev-links").animate({height: '28px'}, 500);
       $("#dev-link").unbind('mouseenter mouseleave')
       dev_opened = true;
     }
@@ -139,59 +139,84 @@ include __DIR__.'/inc/head.inc';
 
   $(document).ready(function() {
     $("#tool-link").click(function() {
-      tools_open_toggle();
-      if (about_opened)
-        about_open_toggle();
-      if (dev_opened)
-        dev_open_toggle();
-      if (history_opened)
-        history_open_toggle();
-      if (ref_opened)
-        ref_open_toggle();});
+      if (!tools_opened) {
+        event.preventDefault();
+        //event.stopPropagation();
+        tools_open_toggle();
+        if (about_opened)
+          about_open_toggle();
+        if (dev_opened)
+          dev_open_toggle();
+        if (history_opened)
+          history_open_toggle();
+        if (ref_opened)
+          ref_open_toggle();
+      }
+    });
 
     $("#dev-link").click(function() {
-      dev_open_toggle();
-      if (about_opened)
-        about_open_toggle();
-      if (tools_opened)
-        tools_open_toggle();
-      if (history_opened)
-        history_open_toggle();
-      if (ref_opened)
-        ref_open_toggle();});
+      if (!dev_opened) {
+        event.preventDefault();
+        //event.stopPropagation();
+        dev_open_toggle();
+        if (about_opened)
+          about_open_toggle();
+        if (tools_opened)
+          tools_open_toggle();
+        if (history_opened)
+          history_open_toggle();
+        if (ref_opened)
+          ref_open_toggle();
+      }
+    });
 
     $("#ref-link").click(function() {
-      ref_open_toggle();
-      if (about_opened)
-        about_open_toggle();
-      if (dev_opened)
-        dev_open_toggle();
-      if (history_opened)
-        history_open_toggle();
-      if (tools_opened)
-        tools_open_toggle();});
+      if (!ref_opened) {
+        event.preventDefault();
+        //event.stopPropagation();
+        ref_open_toggle();
+        if (about_opened)
+          about_open_toggle();
+        if (dev_opened)
+          dev_open_toggle();
+        if (history_opened)
+          history_open_toggle();
+        if (tools_opened)
+          tools_open_toggle();
+      }
+    });
 
     $("#history-link").click(function() {
-      history_open_toggle();
-      if (about_opened)
-        about_open_toggle();
-      if (dev_opened)
-        dev_open_toggle();
-      if (ref_opened)
-        ref_open_toggle();
-      if (tools_opened)
-        tools_open_toggle();});
+      if (!history_opened) {
+        event.preventDefault();
+        //event.stopPropagation();
+        history_open_toggle();
+        if (about_opened)
+          about_open_toggle();
+        if (dev_opened)
+          dev_open_toggle();
+        if (ref_opened)
+          ref_open_toggle();
+        if (tools_opened)
+          tools_open_toggle();
+      }
+    });
 
     $("#about-link").click(function() {
-      about_open_toggle();
-      if (tools_opened)
-        tools_open_toggle();
-      if (dev_opened)
-        dev_open_toggle();
-      if (history_opened)
-        history_open_toggle();
-      if (ref_opened)
-        ref_open_toggle();});
+      if (!about_opened) {
+        event.preventDefault();
+        //event.stopPropagation();
+        about_open_toggle();
+        if (tools_opened)
+          tools_open_toggle();
+        if (dev_opened)
+          dev_open_toggle();
+        if (history_opened)
+          history_open_toggle();
+        if (ref_opened)
+          ref_open_toggle();
+      }
+    });
   });
   </script>
 </head>

@@ -71,7 +71,7 @@ include __DIR__.'/inc/head.inc';
       <a name="chatnet-for-android"></a>
       <h2>ChatNet for Android</h2>
       <p>Although not open source, <a href="https://play.google.com/store/apps/details?id=com.k3nn37h.chatnet">ChatNet for Android</a> was written so that anyone can connect to Hyperspace on the go. All you need is an Android device running v2.3.4 or above, and you can Hyperspec with the best players. It was developed and is maintained by dest_matter, and CDB-Man, using Ceiu's jcnlib (see below).</p>
-      <a name="other-dev"></a>
+      <a name="other"></a>
       <h2>Other Projects</h2>
       <p>There are a lot of talented people in the Subspace community. Here is a quick list of other interesting projects to have a look at:</p>
       <div class="tut">

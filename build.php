@@ -46,6 +46,14 @@ include __DIR__.'/inc/head.inc';
       <p>The following list details the default capacities per item type/category, per ship. Note that these numbers can be modified by purchasable items, or individual ship types; for example "Burst: 0" is increased by purchasing Burst mounts, or may be increased when equiping a Lancaster, for example, as opposed to a Warbird. Additionally, individual items may occupy more than one capacity type.</p>
       <div class="tut">
         <div id="capacity-parent">
+<?php
+  $types = json_decode(file_get_contents('https://raw.githubusercontent.com/Ceiu/hyperspace-items/master/items.json'), true)['types'];
+  $count = sizeof($types);
+  $ceil = ceil($count / 3);
+  $tables = '';
+  for ($i = 0; $i < 3; $i++) {
+    $tables .= <<<'EOF'
+
           <table cellspacing="0">
             <thead>
               <tr>
@@ -54,140 +62,33 @@ include __DIR__.'/inc/head.inc';
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td id="type-unknown">???</td>
-                <td>1</td>
-              </tr>
-              <tr>
-                <td id="type-alientech">Alien Tech</td>
-                <td>1</td>
-              </tr>
-              <tr>
-                <td id="type-ammunition">Ammunition</td>
-                <td>255</td>
-              </tr>
-              <tr>
-                <td id="type-armor">Armor</td>
-                <td>1</td>
-              </tr>
-              <tr>
-                <td id="type-bomb">Bomb</td>
-                <td>1</td>
-              </tr>
-              <tr>
-                <td id="type-brick">Brick</td>
-                <td>0</td>
-              </tr>
-              <tr>
-                <td id="type-burst">Burst</td>
-                <td>0</td>
-              </tr>
-              <tr>
-                <td id="type-capacity">Capacity</td>
-                <td>1</td>
-              </tr>
-              <tr>
-                <td id="type-decoy">Decoy</td>
-                <td>0</td>
-              </tr>
-              <tr>
-                <td id="type-equipment">Equipment</td>
-                <td>2</td>
-              </tr>
+EOF;
+    for ($j = 0; $j < $ceil; $j++) {
+      if ($count > 0) {
+        $key = key($types);
+        if ($key == '???') {
+          $key_lc = 'hidden';
+        } else {
+          $key_lc = strtolower($key);
+        }
+        $item = array_shift($types); $count--;
+        $tables .= <<<EOF
+
+                <tr>
+                  <td id="type-$key_lc">$key</td>
+                  <td>$item</td>
+                </tr>
+EOF;
+      } //if $count > 0
+    } //for $j
+    $tables .= <<<'EOF'
+
             </tbody>
           </table>
-          <table cellspacing="0">
-            <thead>
-              <tr>
-                <th>Type</th>
-                <th>Capacity</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td id="type-ftl">FTL</td>
-                <td>0</td>
-              </tr>
-              <tr>
-                <td id="type-field">Field</td>
-                <td>1</td>
-              </tr>
-              <tr>
-                <td id="type-gun">Gun</td>
-                <td>1</td>
-              </tr>
-              <tr>
-                <td id="type-mount">Mount</td>
-                <td>2</td>
-              </tr>
-              <tr>
-                <td id="type-portal">Portal</td>
-                <td>0</td>
-              </tr>
-              <tr>
-                <td id="type-prototype">Prototype</td>
-                <td>1</td>
-              </tr>
-              <tr>
-                <td id="type-reactor">Reactor</td>
-                <td>1</td>
-              </tr>
-              <tr>
-                <td id="type-relic">Relic</td>
-                <td>1</td>
-              </tr>
-              <tr>
-                <td id="type-repel">Repel</td>
-                <td>0</td>
-              </tr>
-              <tr>
-                <td id="type-repelmount">Repel Mount</td>
-                <td>2</td>
-              </tr>
-            </tbody>
-          </table>
-          <table cellspacing="0">
-            <thead>
-              <tr>
-                <th>Type</th>
-                <th>Capacity</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td id="type-rocket">Rocket</td>
-                <td>0</td>
-              </tr>
-              <tr>
-                <td id="type-sensor">Sensor</td>
-                <td>2</td>
-              </tr>
-              <tr>
-                <td id="type-signature">Signature</td>
-                <td>1</td>
-              </tr>
-              <tr>
-                <td id="type-special">Special</td>
-                <td>255</td>
-              </tr>
-              <tr>
-                <td id="type-sublight">Sublight</td>
-                <td>1</td>
-              </tr>
-              <tr>
-                <td id="type-summon">Summon</td>
-                <td>1</td>
-              </tr>
-              <tr>
-                <td id="type-thor">Thor</td>
-                <td>0</td>
-              </tr>
-              <tr>
-                <td id="type-turret">Turret</td>
-                <td>1</td>
-              </tr>
-            </tbody>
-          </table>
+EOF;
+  } //for $i
+  echo $tables;
+?>
         </div>
       </div>
     </div>
