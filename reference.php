@@ -52,12 +52,12 @@ include __DIR__.'/inc/head.inc';
             </tr>
             <tr>
               <td>nn</td>
-              <td>Zone Helper, Web Developer</td>
+              <td>Zone Helper</td>
               <td></td>
             </tr>
             <tr>
               <td>monkey</td>
-              <td>Bot Developer, Web Developer</td>
+              <td>Bot Developer, Web App Developer</td>
               <td></td>
             </tr>
             <tr>

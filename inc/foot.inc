@@ -27,9 +27,9 @@
           </li>
           <li><a href="/tools.php">Tools</a>
             <ul>
-              <li>Browser</li>
+              <li><!--<a href="/tools/browser.php">-->Browser<!--</a>--></li>
               <li><a href="/build.php">Ship Builder</a></li>
-              <li>Calc</li>
+              <li><!--<a href="/tools/calc.php">-->Calc<!--</a>--></li>
             </ul>
           </li>
           <li><a href="/development.php">Development</a>

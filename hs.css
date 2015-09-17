@@ -189,7 +189,7 @@ table.nostyle td.right {
 
 
 /* ************************************************************************** */
-/* Fixed top menu icons and slide out menu                                    */
+/* Sticky top menu icons and slide out menu                                   */
 /* ************************************************************************** */
 #head {
   position: fixed;
@@ -247,7 +247,7 @@ table.nostyle td.right {
   padding: 10px 0;
 }
 #slidemenu .vertical-nav-links {
-  font-size: 12pt;
+  font-size: 11pt;
   margin: 0 10px;
 }
 #slidemenu .sub-links {

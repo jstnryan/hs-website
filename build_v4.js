@@ -127,7 +127,7 @@ DataLoader.prototype = {
     });
   },
   loadItems: function(callback) {
-    AjaxHandler.request('GET', 'build-api.php?q=items', function(status, responseText) {
+    AjaxHandler.request('GET', 'api/items', function(status, responseText) {
       if (status != 200) {
         callback(new Error('Could not fetch items from API.'));
         return;
@@ -162,7 +162,7 @@ DataLoader.prototype = {
     });
   },
   loadTypes: function(callback) {
-    AjaxHandler.request('GET', 'build-api.php?q=types', function(status, responseText) {
+    AjaxHandler.request('GET', 'api/types', function(status, responseText) {
       if (status != 200) {
         callback(new Error('Could not fetch types from API.'));
         return;
@@ -424,9 +424,6 @@ ShipBuilder.prototype.display = function() {
   if (!table) {
     table = document.createElement('table');
     table.id = 'property-table';
-    z = document.createAttribute('cellspacing');
-    z.value = '0';
-    table.setAttributeNode(z);
     this.element.appendChild(table);
   }
 
@@ -570,15 +567,14 @@ var PageHandler = {
   toggleShipLoader: function() {
     var container = document.getElementById(PageHandler.CONTAINER_ID).parentNode;
     var shipitemsLoader = document.getElementById("shipitems-loader-container");
-    //var style = container.style.display;
-    var style = shipitemsLoader.style.display;
+    var style = container.style.display;
 
-    if (style == 'block') {
-      //container.style.display = 'block';
+    if (style == 'none') {
+      container.style.display = 'block';
       shipitemsLoader.style.display = 'none';
       document.getElementById("shipitems-text").value = '';
     } else {
-      //container.style.display = 'none';
+      container.style.display = 'none';
       shipitemsLoader.style.display = 'block';
     }
   },
