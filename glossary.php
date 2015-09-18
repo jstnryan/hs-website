@@ -119,7 +119,7 @@ include __DIR__.'/inc/head.inc';
                 <td>The time required for Anti-Death to 'recharge.'</td>
                 <td>Lower</td>
             </tr>
-            <tr class="even">
+            <tr>
                 <td>addelay</td>
                 <td>The amount of time before Anti-Death can be used.</td>
                 <td>Lower</td>
@@ -129,17 +129,17 @@ include __DIR__.'/inc/head.inc';
                 <td>The amount of energy required to use Afterburners.</td>
                 <td>Lower</td>
             </tr>
-            <tr class="even">
+            <tr>
                 <td>antienergy</td>
-                <td>The amount of energy required to activate Anti-Warp.</td>
+                <td>The amount of energy required to activate (and use) Antiwarp.</td>
                 <td>Lower</td>
             </tr>
             <tr>
                 <td>antiwarp</td>
-                <td>Whether Warp Disruptor (Anti-Warp) is enabled for your ship.</td>
-                <td>Higher</td>
+                <td>Whether Warp Disruptor (Antiwarp) is enabled for your ship.</td>
+                <td>1</td>
             </tr>
-            <tr class="even">
+            <tr>
                 <td>attachmask</td>
                 <td>Modifies which ship types you can attach to.</td>
                 <td>Neutral</td>
@@ -147,9 +147,9 @@ include __DIR__.'/inc/head.inc';
             <tr>
                 <td>blink</td>
                 <td>Whether Dilithium Matrix is enabled for your ship.</td>
-                <td>Higher</td>
+                <td>1</td>
             </tr>
-            <tr class="even">
+            <tr>
                 <td>blinkaweffect</td>
                 <td></td>
                 <td></td>
@@ -159,7 +159,7 @@ include __DIR__.'/inc/head.inc';
                 <td>The amount of time before Dilithium Matrix can be used.</td>
                 <td>Lower</td>
             </tr>
-            <tr class="even">
+            <tr>
                 <td>blinkdistance</td>
                 <td>The distance of the Dilithium Matrix jump.</td>
                 <td>Neutral</td>
@@ -169,7 +169,7 @@ include __DIR__.'/inc/head.inc';
                 <td></td>
                 <td></td>
             </tr>
-            <tr class="even">
+            <tr>
                 <td>blinkradius</td>
                 <td></td>
                 <td></td>
@@ -179,7 +179,7 @@ include __DIR__.'/inc/head.inc';
                 <td></td>
                 <td>Lower</td>
             </tr>
-            <tr class="even">
+            <tr>
                 <td>bombdelay</td>
                 <td>The time between bombs, or the time that must elapse after firing a bomb, before another weapon can be used.</td>
                 <td>Lower</td>
@@ -189,7 +189,7 @@ include __DIR__.'/inc/head.inc';
                 <td>Modifies your ship's &lt;bombdelay&gt; by a percentage.</td>
                 <td>Lower</td>
             </tr>
-            <tr class="even">
+            <tr>
                 <td>bombenergy</td>
                 <td>The cost (in energy) to fire one bomb. Multiply by &lt;bomblevel&gt; to get actual cost.</td>
                 <td>Higher</td>
@@ -266,7 +266,7 @@ include __DIR__.'/inc/head.inc';
             </tr>
             <tr>
                 <td>burstdamage</td>
-                <td></td>
+                <td>The damage you receive from a single burst bullet.</td>
                 <td>Lower</td>
             </tr>
             <tr>
@@ -277,7 +277,7 @@ include __DIR__.'/inc/head.inc';
             <tr>
                 <td>cloak</td>
                 <td>Whether Cloak is enabled for your ship.</td>
-                <td>Higher</td>
+                <td>1</td>
             </tr>
             <tr>
                 <td>cloakenergy</td>
@@ -341,8 +341,13 @@ include __DIR__.'/inc/head.inc';
             </tr>
             <tr>
                 <td>extrabombcount</td>
-                <td></td>
+                <td>The additional number of bombs released for each bomb fired.</td>
                 <td>Higher</td>
+            </tr>
+            <tr>
+                <td>extrabombdelay</td>
+                <td>The amount of time between release of extra bombs.</td>
+                <td>Lower</td>
             </tr>
             <tr>
                 <td>field</td>
@@ -377,7 +382,7 @@ include __DIR__.'/inc/head.inc';
             <tr>
                 <td>id</td>
                 <td>Whether ID Drive is enabled for your ship.</td>
-                <td>Higher</td>
+                <td>1</td>
             </tr>
             <tr>
                 <td>idarea</td>
@@ -386,8 +391,8 @@ include __DIR__.'/inc/head.inc';
             </tr>
             <tr>
                 <td>idblast</td>
-                <td></td>
-                <td></td>
+                <td>The strength of the explosion that will result from engine failure.</td>
+                <td>Lower</td>
             </tr>
             <tr>
                 <td>idcool</td>
@@ -401,13 +406,13 @@ include __DIR__.'/inc/head.inc';
             </tr>
             <tr>
                 <td>idmaxtofail</td>
-                <td>The maximum level of energy that would cause your ID Drive to kill you.</td>
+                <td>The maximum level of energy that would allow your ID Drive to have engine failure. Using ID with an energy level higher than this amount results in a 0% chance of failure.</td>
                 <td>Lower</td>
             </tr>
             <tr>
                 <td>idonlytk</td>
-                <td>Whether your ID Transport death affects only your team, or others.</td>
-                <td>Higher</td>
+                <td>Whether your ID Transport engine failure affects only your team, or others.</td>
+                <td>Non-one</td>
             </tr>
             <tr>
                 <td>idwarmup</td>
@@ -416,13 +421,13 @@ include __DIR__.'/inc/head.inc';
             </tr>
             <tr>
                 <td>inactshrapdamage</td>
-                <td></td>
+                <td>Damage incurred by shrapnel that did not originate from a bomb blast.</td>
                 <td>Lower</td>
             </tr>
             <tr>
                 <td>initialbounty</td>
-                <td></td>
-                <td>Higher</td>
+                <td>Modifies the bounty your ship has when it spawns.</td>
+                <td>Neutral</td>
             </tr>
             <tr>
                 <td>jittertime</td>
@@ -461,13 +466,18 @@ include __DIR__.'/inc/head.inc';
             </tr>
             <tr>
                 <td>mineenergy</td>
-                <td></td>
-                <td></td>
+                <td>The amount of energy consumed to lay a L1 mine. Multiply by your ship's bomblevel to calculate actual amount.</td>
+                <td>Lower</td>
             </tr>
             <tr>
                 <td>mineenergypct</td>
                 <td></td>
                 <td>Lower</td>
+            </tr>
+            <tr>
+                <td>mineenergyup</td>
+                <td></td>
+                <td></td>
             </tr>
             <tr>
                 <td>multidelay</td>
@@ -481,8 +491,8 @@ include __DIR__.'/inc/head.inc';
             </tr>
             <tr>
                 <td>multienergy</td>
-                <td></td>
-                <td>Higher</td>
+                <td>The amount of energy consumed when firing a single multifire bullet shot.</td>
+                <td>Lower</td>
             </tr>
             <tr>
                 <td>multienergypct</td>
@@ -492,7 +502,12 @@ include __DIR__.'/inc/head.inc';
             <tr>
                 <td>multifire</td>
                 <td>Whether or not the gun has multi-fire capability</td>
-                <td>Higher</td>
+                <td>1</td>
+            </tr>
+            <tr>
+              <td>nofastshoot</td>
+              <td>Determines whether you can shoot while using afterburners.</td>
+              <td>Non-one</td>
             </tr>
             <tr>
                 <td>portal</td>
@@ -557,7 +572,7 @@ include __DIR__.'/inc/head.inc';
             <tr>
                 <td>seemines</td>
                 <td>Whether you can see mines on radar.</td>
-                <td>Higher</td>
+                <td>1</td>
             </tr>
             <tr>
                 <td>shraplevel</td>
@@ -582,7 +597,7 @@ include __DIR__.'/inc/head.inc';
             <tr>
                 <td>stealth</td>
                 <td>Whether Stealth is enabled for your ship.</td>
-                <td>Higher</td>
+                <td>1</td>
             </tr>
             <tr>
                 <td>stealthenergy</td>
@@ -661,13 +676,13 @@ include __DIR__.'/inc/head.inc';
             </tr>
             <tr>
                 <td>turretspeed</td>
-                <td></td>
-                <td></td>
+                <td>The speed decrease incurred when a turret attaches. This value is multiplied by the number of attached ships.</td>
+                <td>Lower</td>
             </tr>
             <tr>
                 <td>turretthrust</td>
-                <td></td>
-                <td></td>
+                <td>The thrust decrease incurred when a turret attaches. This value is multiplied by the number of attached ships.</td>
+                <td>Lower</td>
             </tr>
             <tr>
                 <td>turretweapon</td>
@@ -677,7 +692,7 @@ include __DIR__.'/inc/head.inc';
             <tr>
                 <td>xradar</td>
                 <td>Whether X-Radar is enabled on your ship.</td>
-                <td>Higher</td>
+                <td>1</td>
             </tr>
             <tr>
                 <td>xradarenergy</td>

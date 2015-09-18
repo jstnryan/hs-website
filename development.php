@@ -25,7 +25,7 @@ include __DIR__.'/inc/head.inc';
       <p>AI Bots (those that fly around and shoot other players) in Hyperspace are player run. Although there is no explicit list of rules when running a bot in Hyperspace, the following guidelines are to be kept in mind:</p>
       <ul>
         <li>The bot may be forced to spec, or kicked from the zone by a staff member at any time, for any reason.</li>
-        <li>"Farming" bots (either by killing them over and over, or by transfering money from the bot's account to your own) is highly discouraged. There are multiple safeguards to discourage this behavior, including but not limited to <i>hsd_multiplier</i> and <i>exp_multiplier</i>.</li>
+        <li>"Farming" bots (either by killing them over and over, or by transfering money from the bot's account to your own) is not allowed. There are multiple safeguards to discourage this behavior, including but not limited to <i>hsd_multiplier</i> and <i>exp_multiplier</i>. If zone staff feel necessary, the offending player may be fined money, degranted items, have their kill counts reset, and possible just <i>?explode</i>d on site.</li>
         <li>Bots should not be annoying. Bots may "taunt," however the 'cooldown' period should be set to a reasonable length of time. Real players can be annoying enough as it is.</li>
         <li>Bots should identify themselves as bots by responding to the <i>!owner</i> command with the player name of the bot's operator.</li>
       </ul>
@@ -40,22 +40,27 @@ include __DIR__.'/inc/head.inc';
             </tr>
           </thead>
           <tbody>
+          <!--
             <tr>
               <td>Baked Cake</td>
-              <td></td>
+              <td>Booked Cook (?)</td>
             </tr>
-          <tbody>
             <tr>
               <td>kevinz</td>
               <td></td>
             </tr>
+          -->
             <tr>
               <td>monkey</td>
               <td>taz, X FORCE</td>
             </tr>
             <tr>
               <td>nn</td>
-              <td>who.cares</td>
+              <td>who.cares, booty.warrior</td>
+            </tr>
+            <tr>
+              <td>Noldec</td>
+              <td>Nolbot</td>
             </tr>
             <tr>
               <td>Pity.</td>
@@ -64,6 +69,33 @@ include __DIR__.'/inc/head.inc';
             <tr>
               <td>sigma13</td>
               <td>dosed, desod</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>In addition to user-run AI bots, Hypserspace also utilizes various 'bots;' each facilitate their own unique gameplay features.</p>
+      <div class="tut">
+        <table cellspacing="0">
+          <thead>
+            <tr>
+              <th>Bot</th>
+              <th>Function</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>UB-Picobot</td>
+              <td>Picobot tracks win/loss/suicide numbers and ratios, as well as providing time-tracking alerts for items such as Antideath. PM UB-Picobot <i>!help</i> for a list of commands.</td>
+            </tr>
+            <tr>
+              <td>&lt;Cobalt Mk2&gt;<br>
+                &lt;engine failure&gt;<br>
+                &lt;extraweapon&gt;</td>
+              <td>These 'bots' are server modules which control various item-related functions from the server-side, such as Point Defense, Fields, and controlling engine failures. You can not interact with these bots in the traditional sense, other than engaging in gameplay.</td>
+            </tr>
+            <tr>
+              <td>Autoturret</td>
+              <td>Although very rarely seen, Autoturrets can be placed in game by moderators. These are virual players who's ships are stationary, but target and shoot at other players. Their specific purpose is varied, but Autoturrets are usually used to temporarily enhance gameplay by challenging users to specific tasks (such as getting past one or more turrets in a base).</td>
             </tr>
           </tbody>
         </table>
