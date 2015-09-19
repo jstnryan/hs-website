@@ -40,11 +40,11 @@ include __DIR__.'/inc/head.inc';
             </tr>
           </thead>
           <tbody>
-          <!--
             <tr>
               <td>Baked Cake</td>
-              <td>Booked Cook (?)</td>
+              <td>Baked Cake occasionally runs an obscene number of bots, all of which have names which are some variation on his own, such as, "Borked Cork."</td>
             </tr>
+          <!--
             <tr>
               <td>kevinz</td>
               <td></td>

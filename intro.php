@@ -32,7 +32,7 @@ include __DIR__.'/inc/head.inc';
         <h2>Hyperspace Beginner's Tutorial Part 1<br>- Getting Started and Buying Items</h2>
         <iframe id="tut-vid" width="640" height="360" src="https://www.youtube.com/embed/qn0Xr01L8S4?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
       </div>
-      <p>Rather, if you're not into sitting around and waiting for someone to bring the information you need to you, here's a pictographic quick-start, assembled by the great CDB.</p>
+      <p>Rather, if you're not into sitting around and waiting for someone to bring the information you need to you, here's a pictographic quick-start, assembled by the great Noldec.</p>
       <div class="tut">
         <h2>Welcome to Hyperspace!</h2>
         <img class="tut-img" src="tut/welcome_to_hyperspace.png">

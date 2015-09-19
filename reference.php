@@ -23,20 +23,19 @@ include __DIR__.'/inc/head.inc';
             <tr>
               <td>Ceiu</td>
               <td>SysOp, Lead Developer</td>
-              <td>Cerium</td>
+              <td>Cerium<!--, Vegeta --></td>
             </tr>
             <tr>
               <td>Noldec</td>
               <td>Super Moderator</td>
               <td></td>
+            <tr>
+              <td>Rivel</td>
+              <td>Super Moderator, Zone Mascot</td>
+              <td>irvel, Hyemi, Yeri</td>
             </tr>
             <tr>
               <td>sri</td>
-              <td>Junior Moderator</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>kevinz</td>
               <td>Junior Moderator</td>
               <td></td>
             </tr>
@@ -61,18 +60,15 @@ include __DIR__.'/inc/head.inc';
               <td></td>
             </tr>
             <tr>
-              <td>irvel</td>
-              <td>Zone Mascot</td>
-              <td></td>
-            </tr>
-            <tr>
               <td>sigma13</td>
               <td>Web Developer</td>
               <td>theEND!</td>
             </tr>
           </tr>
         </table>
+        <!--
         <p>For reference, the (non-exhaustive) list of former staff members include: Rivel (jrmod), uniX (Event Coordinator), Arry (jrmod), Aquatiq (mod), Rareitanium, SpiderNL, D1st0rt, Arnk Dylie, Dr Brain</p>
+        -->
       </div>
       <a name="rules"></a>
       <h1>Rules and Guidelines</h1>
