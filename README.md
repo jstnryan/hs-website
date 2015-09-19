@@ -1,9 +1,7 @@
 # Hyperspace Zone Website
 If you have any suggestions or changes, make a pull request, or contact me.
 
-For a preview on the public staging server: http://hs.jstnryan.com
-
-The final home will be: http://sshyperspace.com
+Once a commit is pushed to master, it appears at: http://sshyperspace.com
 
 Things to do:
 - MAKE A FULL TUTORIAL (incl. download game, directory servers, connecting to zone, etc..)!
