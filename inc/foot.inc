@@ -18,30 +18,38 @@
           </li>
           <li>Reference
             <ul>
-              <li><a href="/news.php">news.txt</a></li>
-              <li><a href="/glossary.php#common-terms">Common Terminology</a></li>
-              <li><a href="/glossary.php#ship-properties">Ship Properties Reference</a></li>
-              <li><a href="/reference.php#staff">Zone Staff and Key Individuals</a></li>
-              <li><a href="/reference.php#rules">Rules and Guidelines</a></li>
+              <li><a href="/ref/news.php">news.txt</a></li>
+              <li><a href="/ref/glossary.php#common-terms">Common Terminology</a></li>
+              <li><a href="/ref/glossary.php#ship-properties">Ship Properties Reference</a></li>
+              <li><a href="/ref/index.php#staff">Zone Staff and Key Individuals</a></li>
+              <li><a href="/ref/index.php#rules">Rules and Guidelines</a></li>
             </ul>
           </li>
-          <li><a href="/tools.php">Tools</a>
+          <li><a href="/tools/">Tools</a>
             <ul>
-              <li><!--<a href="/tools/browser.php">-->Browser<!--</a>--></li>
-              <li><a href="/build.php">Ship Builder</a></li>
+              <li><a href="/tools/browse.php#ship-browser">Ship Browser</a></li>
+              <li><a href="/tools/browse.php#item-browser">Item Browser</a></li>
+              <li><a href="/tools/build.php">Ship Builder</a></li>
               <li><!--<a href="/tools/calc.php">-->Calc<!--</a>--></li>
             </ul>
           </li>
-          <li><a href="/development.php">Development</a>
+          <li><a href="/dev/">Development</a>
             <ul>
-              <li><a href="/development.php#zone">Zone Server and Configuration</a></li>
-              <li><a href="/development.php#website">Website</a></li>
-              <li><a href="/development.php#bot">Monkeybot</a></li>
-              <li><a href="/development.php#chatnet-for-android">ChatNet for Android</a></li>
-              <li><a href="/development.php#other">Other Projects</a></li>
+              <li><a href="/dev/index.php#zone">Zone Server and Configuration</a></li>
+              <li><a href="/dev/index.php#website">Website</a></li>
+              <li><a href="/dev/index.php#bot">Monkeybot</a></li>
+              <li><a href="/dev/index.php#chatnet-for-android">ChatNet for Android</a></li>
+              <li><a href="/dev/index.php#other">Other Projects</a></li>
             </ul>
           </li>
-          <li><a href="http://subspace.co/index.php?/forum/15-hyperspace/">Discussion</a> (Forums)</li>
+          <li><a href="http://subspace.co/index.php?/forum/15-hyperspace/">Discussion</a> (Forums)
+            <!--
+            <ul>
+              <li><a href="http://subspace.co/index.php?forum/15-hyperspace/">subspace.co</a></li>
+              <li><a href="http://www.subspaceforum.com/forum/hyperspace">SubSpace Forum</a></li>
+            </ul>
+            -->
+          </li>
           <li>Posterity
             <ul>
               <li><a href="/posterity/articles.php">Legacy Articles</a>

@@ -223,7 +223,7 @@ include __DIR__.'/inc/head.inc';
 <body id="index">
   <div id="getBug">
     <a id="getContinuumNow" href="http://getcontinuum.com/">Get Continuum Now!</a>
-    <a id="needHelp" href='intro.php#gameplay'>Need help getting started? Click here.</a><!-- "http://rshl.org/ci/index.php?c=articleview&amp;A=1001" -->
+    <a id="needHelp" href='/intro.php#gameplay'>Need help getting started? Click here.</a><!-- "http://rshl.org/ci/index.php?c=articleview&amp;A=1001" -->
   </div>
   <div class="center-h center-v" id="center-container">
     <img id="hs-logo" src="hs_logo.png" title="The one and only." />

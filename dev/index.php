@@ -1,10 +1,10 @@
 <?php
 $pagetitle = 'Development Information';
-include __DIR__.'/inc/head.inc';
+include __DIR__.'/../inc/head.inc';
 ?>
 </head>
 <body id="development">
-<?php include __DIR__.'/inc/menu.inc'; ?>
+<?php include __DIR__.'/../inc/menu.inc'; ?>
   <div class="center-h" id="container">
     <div id="main-content">
       <a name="development"></a>
@@ -148,4 +148,4 @@ include __DIR__.'/inc/head.inc';
       </div>
     </div>
   </div>
-<?php include __DIR__.'/inc/foot.inc'; ?>
+<?php include __DIR__.'/../inc/foot.inc'; ?>

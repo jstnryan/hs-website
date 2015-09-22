@@ -8,28 +8,28 @@
             </ul>
           </div>
           <div>
-            <a id="ref-link" class="nav-category" href="/reference.php">Reference</a>
+            <a id="ref-link" class="nav-category" href="/ref/">Reference</a>
             <ul class="sub-links" id="ref-links">
-              <li><a href="/news.php">news.txt</a></li>
-              <li><a href="/glossary.php">Glossary</a></li>
-              <li><a href="/reference.php#staff">Staff</a></li>
-              <li><a href="/reference.php#rules">Rules</a></li>
+              <li><a href="/ref/news.php">news.txt</a></li>
+              <li><a href="/ref/glossary.php">Glossary</a></li>
+              <li><a href="/ref/index.php#staff">Staff</a></li>
+              <li><a href="/ref/index.php#rules">Rules</a></li>
             </ul>
           </div>
           <div>
-            <a id="tool-link" class="nav-category" href="/tools.php">Tools</a>
+            <a id="tool-link" class="nav-category" href="/tools/">Tools</a>
             <ul class="sub-links" id="tool-links">
-              <li>Browser</li>
-              <li><a href="/build.php">Builder</a></li>
+              <li><a href="/tools/browse.php">Browser</a></li>
+              <li><a href="/tools/build.php">Builder</a></li>
               <li>Calc</li>
             </ul>
           </div>
           <div>
-            <a id="dev-link" class="nav-category" href="/development.php">Development</a>
+            <a id="dev-link" class="nav-category" href="/dev/">Development</a>
             <ul class="sub-links" id="dev-links">
-              <li><a href="/development.php#zone">Zone</a></li>
-              <li><a href="/development.php#website">Website</a></li>
-              <li><a href="/development.php#bot">Bot</a></li>
+              <li><a href="/dev/index.php#zone">Zone</a></li>
+              <li><a href="/dev/index.php#website">Website</a></li>
+              <li><a href="/dev/index.php#bot">Bot</a></li>
             </ul>
           </div>
           <div>

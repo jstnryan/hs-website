@@ -1,10 +1,10 @@
 <?php
 $pagetitle = 'Common Terminology and Ship Status Glossary';
-include __DIR__.'/inc/head.inc';
+include __DIR__.'/../inc/head.inc';
 ?>
 </head>
 <body id="glossary">
-<?php include __DIR__.'/inc/menu.inc'; ?>
+<?php include __DIR__.'/../inc/menu.inc'; ?>
   <div class="center-h" id="container">
     <div id="main-content">
       <a name="common-terms"></a>
@@ -709,4 +709,4 @@ include __DIR__.'/inc/head.inc';
       </div>
     </div>
   </div>
-<?php include __DIR__.'/inc/foot.inc'; ?>
+<?php include __DIR__.'/../inc/foot.inc'; ?>

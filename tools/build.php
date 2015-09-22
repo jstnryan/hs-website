@@ -1,6 +1,50 @@
 <?php
+function generate_category_capacities_tables() {
+  $types = json_decode(file_get_contents('https://raw.githubusercontent.com/Ceiu/hyperspace-items/master/items.json'), true)['types'];
+  $count = sizeof($types);
+  $ceil = ceil($count / 3);
+  $tables = '';
+  for ($i = 0; $i < 3; $i++) {
+    $tables .= <<<'EOF'
+
+          <table cellspacing="0">
+            <thead>
+              <tr>
+                <th>Type</th>
+                <th>Capacity</th>
+              </tr>
+            </thead>
+            <tbody>
+EOF;
+    for ($j = 0; $j < $ceil; $j++) {
+      if ($count > 0) {
+        $key = key($types);
+        if ($key == '???') {
+          $key_lc = 'hidden';
+        } else {
+          $key_lc = strtolower($key);
+        }
+        $item = array_shift($types); $count--;
+        $tables .= <<<EOF
+
+                <tr>
+                  <td id="type-$key_lc">$key</td>
+                  <td>$item</td>
+                </tr>
+EOF;
+      } //if $count > 0
+    } //for $j
+    $tables .= <<<'EOF'
+
+            </tbody>
+          </table>
+EOF;
+  } //for $i
+  return $tables;
+}
+
 $pagetitle = 'Ship Builder';
-include __DIR__.'/inc/head.inc';
+include __DIR__.'/../inc/head.inc';
 ?>
     <script src="build.js"></script>
     <style>
@@ -44,7 +88,7 @@ include __DIR__.'/inc/head.inc';
     </style>
   </head>
   <body id="build">
-<?php include __DIR__.'/inc/menu.inc'; ?>
+<?php include __DIR__.'/../inc/menu.inc'; ?>
   <div class="center-h container" id="container">
     <div id="main-content">
       <a name="build"></a>
@@ -71,51 +115,9 @@ include __DIR__.'/inc/head.inc';
       <p>The following list details the default capacities per item type/category, per ship. Note that these numbers can be modified by purchasable items, or individual ship types; for example "Burst: 0" is increased by purchasing Burst mounts, or may be increased when equiping a Lancaster, for example, as opposed to a Warbird. Additionally, individual items may occupy more than one capacity type.</p>
       <div class="tut">
         <div id="capacity-parent">
-<?php
-  $types = json_decode(file_get_contents('https://raw.githubusercontent.com/Ceiu/hyperspace-items/master/items.json'), true)['types'];
-  $count = sizeof($types);
-  $ceil = ceil($count / 3);
-  $tables = '';
-  for ($i = 0; $i < 3; $i++) {
-    $tables .= <<<'EOF'
-
-          <table cellspacing="0">
-            <thead>
-              <tr>
-                <th>Type</th>
-                <th>Capacity</th>
-              </tr>
-            </thead>
-            <tbody>
-EOF;
-    for ($j = 0; $j < $ceil; $j++) {
-      if ($count > 0) {
-        $key = key($types);
-        if ($key == '???') {
-          $key_lc = 'hidden';
-        } else {
-          $key_lc = strtolower($key);
-        }
-        $item = array_shift($types); $count--;
-        $tables .= <<<EOF
-
-                <tr>
-                  <td id="type-$key_lc">$key</td>
-                  <td>$item</td>
-                </tr>
-EOF;
-      } //if $count > 0
-    } //for $j
-    $tables .= <<<'EOF'
-
-            </tbody>
-          </table>
-EOF;
-  } //for $i
-  echo $tables;
-?>
+<?php echo generate_category_capacities_tables(); ?>
         </div>
       </div>
     </div>
   </div>
-<?php include __DIR__.'/inc/foot.inc'; ?>
+<?php include __DIR__.'/../inc/foot.inc'; ?>

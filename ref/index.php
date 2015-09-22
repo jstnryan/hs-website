@@ -1,10 +1,10 @@
 <?php
 $pagetitle = 'Zone Reference';
-include __DIR__.'/inc/head.inc';
+include __DIR__.'/../inc/head.inc';
 ?>
   </head>
   <body id="reference">
-<?php include __DIR__.'/inc/menu.inc'; ?>
+<?php include __DIR__.'/../inc/menu.inc'; ?>
   <div class="center-h container" id="container">
     <div id="main-content">
       <a name="staff"></a>
@@ -51,7 +51,7 @@ include __DIR__.'/inc/head.inc';
             </tr>
             <tr>
               <td>nn</td>
-              <td>Zone Helper</td>
+              <td>Zone Helper, Developer</td>
               <td></td>
             </tr>
             <tr>
@@ -84,4 +84,4 @@ include __DIR__.'/inc/head.inc';
       </div>
     </div>
   </div>
-<?php include __DIR__.'/inc/foot.inc'; ?>
+<?php include __DIR__.'/../inc/foot.inc'; ?>
