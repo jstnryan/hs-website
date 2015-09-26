@@ -7,7 +7,7 @@ Things to do:
 - MAKE MOBILE STYLE SHEET
 - MAKE A FULL TUTORIAL (incl. download game, directory servers, connecting to zone, etc..)!
 - Tidy up code / compress where relevant
-- build the remaining "tools" utilities
+- build the remaining "tools" utility
 - touch up the style for the top navigation
 - finish styling the search results page
 

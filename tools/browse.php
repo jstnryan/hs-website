@@ -1,12 +1,61 @@
 <?php
+function generate_category_capacities_tables() {
+  $types = json_decode(file_get_contents('https://raw.githubusercontent.com/Ceiu/hyperspace-items/master/items.json'), true)['types'];
+  $count = sizeof($types);
+  $ceil = ceil($count / 3);
+  $tables = '';
+  for ($i = 0; $i < 3; $i++) {
+    $tables .= <<<'EOF'
+
+          <table cellspacing="0">
+            <thead>
+              <tr>
+                <th>Type</th>
+                <th>Capacity</th>
+              </tr>
+            </thead>
+            <tbody>
+EOF;
+    for ($j = 0; $j < $ceil; $j++) {
+      if ($count > 0) {
+        $key = key($types);
+        if ($key == '???') {
+          $key_lc = 'hidden';
+        } else {
+          $key_lc = strtolower($key);
+        }
+        $item = array_shift($types); $count--;
+        $tables .= <<<EOF
+
+                <tr>
+                  <td id="type-$key_lc">$key</td>
+                  <td>$item</td>
+                </tr>
+EOF;
+      } //if $count > 0
+    } //for $j
+    $tables .= <<<'EOF'
+
+            </tbody>
+          </table>
+EOF;
+  } //for $i
+  return $tables;
+}
+
 $pagetitle = 'Ship and Item Stats Browser';
 include __DIR__.'/../inc/head.inc';
 ?>
-  <style>
-    table table td { text-transform: none; }
-    #ship-buy-price::before,
-    #ship-sell-price::before { content: '$'; }
-  </style>
+    <style>
+      table table td { text-transform: none; }
+      #ship-buy-price::before,
+      #ship-sell-price::before { content: '$'; }
+
+      #capacity-parent { overflow:auto; width:100%; /* float clear */ }
+      #capacity-parent table { display: inline-block; float: left; width: 30%; margin:0 10px; }
+
+      .wrap { white-space: normal; }
+    </style>
   </head>
   <body id="browse">
 <?php include __DIR__.'/../inc/menu.inc'; ?>
@@ -194,10 +243,10 @@ include __DIR__.'/../inc/head.inc';
       <a name="item-browser"></a>
       <h2>Item Browser</h2>
       <p>The item browser is the web equivalent of the in-game <i>?buy</i> and <i>?iteminfo</i> menus. You can use this utility to plan a ship build, or compare various items, outside of the game environment.</p>
-      <div class="">
+      <div class="tut">
 
 
-        <table cellspacing="0">
+        <table cellspacing="0" style="width:100%;">
           <thead>
             <tr>
               <th class="contains-table" colspan="2">
@@ -212,46 +261,12 @@ include __DIR__.'/../inc/head.inc';
                   <tbody>
                     <tr>
                       <td>
-                        <select id="category-selector">
-                          <option id="category-guns" value="Guns">Guns</option>
-                          <option id="category-bombs" value="Bombs">Bombs</option>
-                          <option id="category-sublightengines" value="Sublight Engines">Sublight Engines</option>
-                          <option id="category-reactorplants" value="Reactor Plants">Reactor Plants</option>
-                          <option id="category-armor" value="Armor">Armor</option>
-                          <option id="category-sensors" value="Sensors">Sensors</option>
-                          <option id="category-equipment" value="Equipment">Equipment</option>
-                          <option id="category-mounts" value="Mounts">Mounts</option>
-                          <option id="category-ftlengines" value="FTL Engines">FTL Engines</option>
-                          <option id="category-converters" value="Converters">converters</option>
-                          <option id="category-alientechnology" value="Alien Technology">Alien Technology</option>
-                          <option id="category-consumables" value="Consumables">Consumables</option>
-                          <option id="category-hidden" value="Hidden">Hidden</option>
-                        </select>
+                        <select id="category-selector"></select>
                       </td>
                       <td>
-                        <select id="item-selector">
-                          <option id="item-gammaray" value="Gamma Ray">Gamma Ray</option>
-                          <option id="item-gausscannon">Gausss Cannon</option>
-                          <option id="item-disruptor">Disruptor</option>
-                          <option id="item-peashooter">Pea Shooter</option>
-                          <option id="item-shredder">Shredder</option>
-                          <option id="item-beamarray">Beam Array</option>
-                          <option id="item-phaser">Phaser</option>
-                          <option id="item-plasmabeam">Plasma Beam</option>
-                          <option id="item-arcfirearray">Arcfire Array</option>
-                          <option id="item-shrapbooster">Shrap Booster</option>
-                          <option id="item-neutrongun">Neutron Gun</option>
-                          <option id="item-positrongun">Positron Gun</option>
-                          <option id="item-massdriver">Mass Driver</option>
-                          <option id="item-protonbeam">Proton Beam</option>
-                          <option id="item-Sharppinger">Sharppinger</option>
-                          <option id="item-gigajoulerailgun">GigajouleRailgun</option>
-                          <option id="item-duallaser">Dual Laser</option>
-                        </select>
+                        <select id="item-selector"></select>
                       </td>
-                      <td>
-                        An average yet versatile gun, for a low cost.
-                      </td>
+                      <td id="item-long_description" class="wrap"></td>
                     </tr>
                   </tbody>
                 </table>
@@ -265,31 +280,31 @@ include __DIR__.'/../inc/head.inc';
                   <tbody>
                     <tr>
                       <td>Buy Price</td>
-                      <td class="right">$1000</td>
+                      <td id="item-buy_price" class="right"></td>
                     </tr>
                     <tr>
                       <td>Sell Price</td>
-                      <td class="right">$750</td>
+                      <td id="item-sell_price" class="right"></td>
                     </tr>
                     <tr>
                       <td>Exp</td>
-                      <td class="right">0</td>
+                      <td id="item-exp_required" class="right"></td>
                     </tr>
                     <tr>
                       <td>Ships</td>
-                      <td class="right">12345678</td>
+                      <td id="item-ships_allowed" class="right"></td>
                     </tr>
                     <tr>
                       <td>Max</td>
-                      <td class="right">1</td>
+                      <td id="item-max" class="right"></td>
                     </tr>
                     <tr>
                       <td>Ammo</td>
-                      <td class="right">None</td>
+                      <td id="item-min_ammo" class="right"></td>
                     </tr>
                     <tr>
                       <td>Item Types</td>
-                      <td class="right">Gun</td>
+                      <td id="item-types" class="right"></td>
                     </tr>
                   </tbody>
                 </table>
@@ -302,27 +317,7 @@ include __DIR__.'/../inc/head.inc';
                       <th>Value</th>
                     </tr>
                   </thead>
-                  <tbody id="ship-prop">
-                    <tr>
-                      <td>gunlevel</td>
-                      <td>+2</td>
-                    </tr>
-                    <tr>
-                      <td>bounce</td>
-                      <td>+1</td>
-                    </tr>
-                    <tr>
-                      <td>bulletenergy</td>
-                      <td>=21</td>
-                    </tr>
-                    <tr>
-                      <td>bulletdelay</td>
-                      <td>=22</td>
-                    </tr>
-                    <tr>
-                      <td>initialbounty</td>
-                      <td>-1</td>
-                    </tr>
+                  <tbody id="item-prop">
                   </tbody>
                 </table>
               </td>
@@ -330,8 +325,20 @@ include __DIR__.'/../inc/head.inc';
           </tbody>
         </table>
       </div>
+      <h2>Category Capacities</h2>
+      <p>The following list details the default capacities per item type/category, per ship. Note that these numbers can be modified by purchasable items, or individual ship types; for example "Burst: 0" is increased by purchasing Burst mounts, or may be increased when equiping a Lancaster, for example, as opposed to a Warbird. Additionally, individual items may occupy more than one capacity type.</p>
+      <div class="tut">
+        <div id="capacity-parent">
+<?php echo generate_category_capacities_tables(); ?>
+        </div>
+      </div>
     </div>
   </div>
-  <script>var ship_json = <?= json_encode(json_decode(file_get_contents('ships.json'), true)['ships']); ?>;</script>
+  <script>
+    //var ship_json = /?= json_encode(json_decode(file_get_contents('ships.json'), true)['ships']); ?/;
+    var ship_json = <?= file_get_contents("http://".$_SERVER['HTTP_HOST'].dirname($_SERVER['PHP_SELF']).'/build-api.php?q=ships'); ?>;
+    //var item_json = /?= json_encode(json_decode(file_get_contents('items.json'), true)['items']); ?/;
+    var item_json = <?= file_get_contents("http://".$_SERVER['HTTP_HOST'].dirname($_SERVER['PHP_SELF']).'/build-api.php?q=items'); ?>;
+  </script>
   <script src="browse.js"></script>
 <?php include __DIR__.'/../inc/foot.inc'; ?>

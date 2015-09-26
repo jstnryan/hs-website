@@ -1,48 +1,4 @@
 <?php
-function generate_category_capacities_tables() {
-  $types = json_decode(file_get_contents('https://raw.githubusercontent.com/Ceiu/hyperspace-items/master/items.json'), true)['types'];
-  $count = sizeof($types);
-  $ceil = ceil($count / 3);
-  $tables = '';
-  for ($i = 0; $i < 3; $i++) {
-    $tables .= <<<'EOF'
-
-          <table cellspacing="0">
-            <thead>
-              <tr>
-                <th>Type</th>
-                <th>Capacity</th>
-              </tr>
-            </thead>
-            <tbody>
-EOF;
-    for ($j = 0; $j < $ceil; $j++) {
-      if ($count > 0) {
-        $key = key($types);
-        if ($key == '???') {
-          $key_lc = 'hidden';
-        } else {
-          $key_lc = strtolower($key);
-        }
-        $item = array_shift($types); $count--;
-        $tables .= <<<EOF
-
-                <tr>
-                  <td id="type-$key_lc">$key</td>
-                  <td>$item</td>
-                </tr>
-EOF;
-      } //if $count > 0
-    } //for $j
-    $tables .= <<<'EOF'
-
-            </tbody>
-          </table>
-EOF;
-  } //for $i
-  return $tables;
-}
-
 $pagetitle = 'Ship Builder';
 include __DIR__.'/../inc/head.inc';
 ?>
@@ -62,9 +18,6 @@ include __DIR__.'/../inc/head.inc';
       #ship-builder { max-height: 700px; overflow: auto; }
 
       #builder-parent .error { color: red; }
-
-      #capacity-parent { overflow:auto; width:100%; /* float clear */ }
-      #capacity-parent table { display: inline-block; float: left; width: 30%; margin:0 10px; }
 
       #build-top { overflow:auto; width:100%; /* float clear */ }
       #ship-container { float: left; }
@@ -109,13 +62,6 @@ include __DIR__.'/../inc/head.inc';
             <button id="shipitems-load">Load</button>
             <button id="shipitems-cancel">Cancel</button>
           </div>
-        </div>
-      </div>
-      <h2>Category Capacities</h2>
-      <p>The following list details the default capacities per item type/category, per ship. Note that these numbers can be modified by purchasable items, or individual ship types; for example "Burst: 0" is increased by purchasing Burst mounts, or may be increased when equiping a Lancaster, for example, as opposed to a Warbird. Additionally, individual items may occupy more than one capacity type.</p>
-      <div class="tut">
-        <div id="capacity-parent">
-<?php echo generate_category_capacities_tables(); ?>
         </div>
       </div>
     </div>

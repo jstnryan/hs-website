@@ -42,6 +42,10 @@ include __DIR__.'/../inc/head.inc';
               <td>Refers to the ship on the flagging team to which the team attaches aftear death to warp back to the flagging base, or to the action of attaching to the anchor ship.<br>Syn: lanc, evoker</td>
             </tr>
             <tr>
+              <td>big[s]</td>
+              <td>The large sized ships, ie the Spider and Leviathan. This may also include the Lancaster, although it is bigger than the other two. These ships can be equiped with <i>Evoker</i> (and <i>Summoner</i> in the case of the Leviathan), so that other ships can attach with no energy penalty, to become an <i>anchor</i>.</td>
+            </tr>
+            <tr>
               <td>buff</td>
               <td>To increase the capability or performance of something.<br>Ant: nerf</td>
             </tr>
@@ -58,8 +62,21 @@ include __DIR__.'/../inc/head.inc';
               <td>Evoker is the item that can be added to certain ships which allows other ships to attach with no energy penalty. Teammates may announce "evo" when they want to you attach to them.</td>
             </tr>
             <tr>
+              <td>farm, farming</td>
+              <td>Utilizing bots for unapproved gain, such as grinding them for easy money, or transfering money from a bot account to the account of a real player. <i>Note: Farming is against zone rules.</i></td>
+            </tr>
+            <tr>
               <td><span class="nowrap">flag room</span>, fr</td>
               <td>The area most central to a base, where flags can be <i>dropped</i> to retain team ownership.</td>
+            </tr>
+            <tr>
+              <td>grind</td>
+              <td>May refer to:
+                <ul>
+                  <li>The process of killing enemy ships repeatedly to earn money and exp.</li>
+                  <li>Repeatedly killing bots, usually with ignoble tactics, to more easily amass money and exp. See also: Farming. <i>Note: Grinding bots is against zone rules.</i></li>
+                </ul>
+              </td>
             </tr>
             <tr>
               <td>jp, jackpot</td>
@@ -68,6 +85,10 @@ include __DIR__.'/../inc/head.inc';
             <tr>
               <td>lanc, lancaster</td>
               <td>Litterally used to refer to the Lancaster ship type, however because of the <i>?lancs</i> command, sometimes is used as a blanket term to describe any ship with Evoker capability that can be attached to.<br>Syn: anchor, evoker</td>
+            </tr>
+            <tr>
+              <td>med[s], medium[s]</td>
+              <td>The medium sized ships, ie the Terrier and Weasel. These ships can only attach to larger ships.</td>
             </tr>
             <tr>
               <td>nerf</td>
@@ -91,12 +112,21 @@ include __DIR__.'/../inc/head.inc';
               <td>An abbreviation for Point Defense, the item that adds an automated turret to a ship.</td>
             </tr>
             <tr>
+              <td>rush[ing]</td>
+              <td>May refer to:
+                <ul>
+                  <li>The act of agressively attacking the enemy inside a base.</li>
+                  <li>A ship built for the purpose of doing the aforementioned.</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
               <td>sig, signature</td>
               <td>Some of the ship items which can be purchased are considered 'signature items.' These items are part of a group of specialized items, of which each ship can only (typically) carry one at a time. In the <i>?buy</i> menus, these items' descriptions begin with <b>[S]</b>.</td>
             </tr>
             <tr>
-              <td>smalls</td>
-              <td>The smaller sized ships, ie the Warbird and Javelin. Often these ships are used for <i>rushing</i>, and a teammate will announce "ad smalls," to encourage pilots in small ships to advance. Smalls can attach to larger ships.</td>
+              <td>small[s]</td>
+              <td>The smaller sized ships, ie the Warbird, Javelin, and Shark. Often these ships are used for <i>rushing</i> or <i>leaking</i>, and a teammate will announce "ad smalls," to encourage pilots in small ships to advance. Smalls can attach to larger ships.</td>
             </tr>
           </tbody>
         </table>

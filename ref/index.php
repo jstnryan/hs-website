@@ -26,6 +26,11 @@ include __DIR__.'/../inc/head.inc';
               <td>Cerium<!--, Vegeta --></td>
             </tr>
             <tr>
+              <td>Arnk Dylie</td>
+              <td>SysOp (SSCE Operator)</td>
+              <td></td>
+            </tr>
+            <tr>
               <td>Noldec</td>
               <td>Super Moderator</td>
               <td></td>
