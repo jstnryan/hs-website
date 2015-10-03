@@ -27,8 +27,8 @@ var tipuesearch_replace = {'words': [
 
 var tipuesearch_weight = {'weight': [
      {'url': '/intro.php', 'score': 400},
-     {'url': '/reference.php', 'score': 200},
-     {'url': '/glossary.php', 'score': 200}
+     {'url': '/ref/reference.php', 'score': 200},
+     {'url': '/ref/glossary.php', 'score': 200}
 ]};
 
 

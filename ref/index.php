@@ -37,7 +37,7 @@ include __DIR__.'/../inc/head.inc';
             <tr>
               <td>Rivel</td>
               <td>Super Moderator, Zone Mascot</td>
-              <td>irvel, Hyemi, Yeri</td>
+              <td>irvel, Hyemi, Yeri, selfname</td>
             </tr>
             <tr>
               <td>sri</td>

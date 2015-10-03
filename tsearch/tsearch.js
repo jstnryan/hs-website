@@ -24,7 +24,7 @@ http://www.tipue.com/search
                'mode'                   : 'static',
                'liveDescription'        : '*',
                'liveContent'            : '*',
-               'contentLocation'        : 'tipuesearch/tipuesearch_content.json',
+               'contentLocation'        : '/tsearch/tipuesearch_content.json',
                'debug'                  : false
           
           }, options);

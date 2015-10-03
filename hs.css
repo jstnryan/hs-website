@@ -230,6 +230,7 @@ table td.contains-table {
   /* height: 100%; */
   z-index: 300;
 }
+.slideout { transition: right .25s; }
 .closeslide {
   float: right;
   padding: 14px 17px 14px 14px;

@@ -11,6 +11,7 @@ include __DIR__.'/inc/head.inc';
       .tipue_search_content_text { font-size: 8pt; }
       #tipue_search_warning { text-transform: uppercase; }
     </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="/tsearch/tsearch_content.js"></script><!-- content -->
     <!-- <link href="/tsearch/tsearch.css" rel="stylesheet"> -->
     <script src="/tsearch/tsearch_set.js"></script><!-- options -->

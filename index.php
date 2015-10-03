@@ -70,154 +70,45 @@ include __DIR__.'/inc/head.inc';
         transition: color 200ms ease-out;
       }
       #needHelp:hover { color: #84b3eb; }
+
+      .sub-links { transition: height .5s; }
     </style>
     <script>
-    var about_opened = false;
-    var ref_opened = false;
-    var tools_opened = false;
-    var dev_opened = false;
-    var history_opened = false;
+      var last_opened = '';
 
-    var about_open_toggle = function() {
-      if (about_opened) {
-        $("#about-links").animate({height: '0px'}, 500);
-        //$("#about-link").hover(function(evt) {
-        //  $("#about-link").css("text-decoration", evt.type == "mouseenter" ? "underline" : "none");
-        //});
-        about_opened = false;
-      } else {
-        $("#about-links").animate({height: '28px'}, 500);
-        //$("#about-link").css("text-decoration", "underline");
-        $("#about-link").unbind('mouseenter mouseleave')
-        about_opened = true;
+      function navtoggle(which) {
+        if (last_opened == which) {
+          //would normally close here, but instead 2x click = go to link
+          window.location.href = document.getElementById(which.substr(0, which.length - 1)).href;
+        } else {
+          //open this, close others
+          var sublinks = document.getElementById('center-container').getElementsByClassName('sub-links');
+          for (var i = 0; i < sublinks.length; ++i) {
+            if (sublinks[i].id != which) {
+              sublinks[i].style.height = '0';
+            } else {
+              sublinks[i].style.height = '28px';
+            }
+          }
+        }
+        last_opened = which;
       }
-    }
 
-    var ref_open_toggle = function() {
-      if (ref_opened) {
-        $("#ref-links").animate({height: '0px'}, 500);
-        ref_opened = false;
-      } else {
-        $("#ref-links").animate({height: '28px'}, 500);
-        $("#ref-link").unbind('mouseenter mouseleave')
-        ref_opened = true;
+      function navclick(e) {
+        navtoggle(e.srcElement.id + 's');
+
+        var evt = e ? e:window.event;
+        if (evt.preventDefault) evt.preventDefault();
+        evt.returnValue = false;
+        return false;
       }
-    }
 
-    var tools_open_toggle = function() {
-      if (tools_opened) {
-        $("#tool-links").animate({height: '0px'}, 500);
-        tools_opened = false;
-      } else {
-        $("#tool-links").animate({height: '28px'}, 500);
-        $("#tool-link").unbind('mouseenter mouseleave')
-        tools_opened = true;
-      }
-    }
-
-    var history_open_toggle = function() {
-      if (history_opened) {
-        $("#history-links").animate({height: '0px'}, 500);
-        history_opened = false;
-      } else {
-        $("#history-links").animate({height: '28px'}, 500);
-        $("#history-link").unbind('mouseenter mouseleave')
-        history_opened = true;
-      }
-    }
-
-    var dev_open_toggle = function() {
-      if (dev_opened) {
-        $("#dev-links").animate({height: '0px'}, 500);
-        dev_opened = false;
-      } else {
-        $("#dev-links").animate({height: '28px'}, 500);
-        $("#dev-link").unbind('mouseenter mouseleave')
-        dev_opened = true;
-      }
-    }
-
-    $(document).ready(function() {
-      $("#tool-link").click(function() {
-        if (!tools_opened) {
-          event.preventDefault();
-          //event.stopPropagation();
-          tools_open_toggle();
-          if (about_opened)
-            about_open_toggle();
-          if (dev_opened)
-            dev_open_toggle();
-          if (history_opened)
-            history_open_toggle();
-          if (ref_opened)
-            ref_open_toggle();
+      window.addEventListener('load', function() {
+        var navlinks = document.getElementById('center-container').getElementsByClassName('nav-category');
+        for (var i = 0; i < navlinks.length; ++i) {
+          navlinks[i].addEventListener('click', navclick);
         }
       });
-
-      $("#dev-link").click(function() {
-        if (!dev_opened) {
-          event.preventDefault();
-          //event.stopPropagation();
-          dev_open_toggle();
-          if (about_opened)
-            about_open_toggle();
-          if (tools_opened)
-            tools_open_toggle();
-          if (history_opened)
-            history_open_toggle();
-          if (ref_opened)
-            ref_open_toggle();
-        }
-      });
-
-      $("#ref-link").click(function() {
-        if (!ref_opened) {
-          event.preventDefault();
-          //event.stopPropagation();
-          ref_open_toggle();
-          if (about_opened)
-            about_open_toggle();
-          if (dev_opened)
-            dev_open_toggle();
-          if (history_opened)
-            history_open_toggle();
-          if (tools_opened)
-            tools_open_toggle();
-        }
-      });
-
-      $("#history-link").click(function() {
-        if (!history_opened) {
-          event.preventDefault();
-          //event.stopPropagation();
-          history_open_toggle();
-          if (about_opened)
-            about_open_toggle();
-          if (dev_opened)
-            dev_open_toggle();
-          if (ref_opened)
-            ref_open_toggle();
-          if (tools_opened)
-            tools_open_toggle();
-        }
-      });
-
-      $("#about-link").click(function() {
-        if (!about_opened) {
-          event.preventDefault();
-          //event.stopPropagation();
-          about_open_toggle();
-          if (tools_opened)
-            tools_open_toggle();
-          if (dev_opened)
-            dev_open_toggle();
-          if (history_opened)
-            history_open_toggle();
-          if (ref_opened)
-            ref_open_toggle();
-        }
-      });
-    });
     </script>
   </head>
   <body id="index">

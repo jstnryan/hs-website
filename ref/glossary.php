@@ -570,6 +570,16 @@ include __DIR__.'/../inc/head.inc';
                 <td>Higher</td>
             </tr>
             <tr>
+                <td>revival_chance</td>
+                <td>The percent chance that Revival Module will revive your ship upon death.</td>
+                <td>Higher</td>
+            </tr>
+            <tr>
+                <td>revival_module_enabled</td>
+                <td>Whether Revival Module is enabled for this ship.</td>
+                <td>1</td>
+            </tr>
+            <tr>
                 <td>rocket</td>
                 <td>The number of Rocket your ship has at spawning.</td>
                 <td>Higher</td>
