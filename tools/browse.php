@@ -63,7 +63,7 @@ include __DIR__.'/../inc/head.inc';
     <div id="main-content">
       <a name="ship-browser"></a>
       <h1>Ship Browser</h1>
-      <p>With this utility you can view the default stats for each available ship in Hyperspace. This information is equivalent to the in-game <i>?buy ships</i> and <i>?shipinfo #</i> menus.</p>
+      <p>With this utility you can view the default stats for each available ship in Hyperspace. This information is equivalent to the in-game <code>?buy ships</code> and <code>?shipinfo #</code> menus.</p>
       <div class="">
         <table cellspacing="0">
           <thead>
@@ -242,7 +242,7 @@ include __DIR__.'/../inc/head.inc';
       </div>
       <a name="item-browser"></a>
       <h2>Item Browser</h2>
-      <p>The item browser is the web equivalent of the in-game <i>?buy</i> and <i>?iteminfo</i> menus. You can use this utility to plan a ship build, or compare various items, outside of the game environment.</p>
+      <p>The item browser is the web equivalent of the in-game <code>?buy</code> and <code>?iteminfo</code> menus. You can use this utility to plan a ship build, or compare various items, outside of the game environment.</p>
       <div class="tut">
 
 

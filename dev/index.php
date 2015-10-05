@@ -16,7 +16,7 @@ include __DIR__.'/../inc/head.inc';
       <p><a href="https://github.com/Ceiu/hyperspace-asss">Canonical Hyperspace zone modules and configuration repository</a> - These are the additional code neccessary to be added to ASSS in order to run Hyperspace. Ceiu is currently the zone sysop, and main developer; all zone changes come from, or get pushed to, his repository before being enabled on the server. For some cursory tips on getting started with the modules, have a look at <a href="http://wiki.minegoboom.com/index.php?title=Writing_Modules_for_Hyperspace&oldid=5869">Writing Modules for Hyperspace</a> on the ASSS wiki.</p>
       <p><a href="https://github.com/Ceiu/hyperspace-items">Authoritative JSON config for Hyperspace items</a> - Ceiu also maintains the official repository for zone item configuration. Items and their properties are kept in a JSON object, in plain text, so that it can be edited by anyone. As such anyone interested is welcome to modify the JSON, and submit it for consideration to be included on the server.<br>
         CDB, the lead items developer, also maintains <a href="https://github.com/CDB-Man/hyperspace-items">his own branch of the items JSON</a>.</p>
-      <p><a href="https://github.com/jstnryan/hyperspace-ships">Ship settings JSON config</a> - sigma13 maintains a repo containing an unofficial JSON config (in the vein of the items config) which details the default ship values (initial & max) listed in the <i>?shipinfo #</i> in-game menu.</p>
+      <p><a href="https://github.com/jstnryan/hyperspace-ships">Ship settings JSON config</a> - sigma13 maintains a repo containing an unofficial JSON config (in the vein of the items config) which details the default ship values (initial & max) listed in the <code>?shipinfo #</code> in-game menu.</p>
       <a name="website"></a>
       <h2>Website</h2>
       <p><a href="https://github.com/jstnryan/hs-website">Hyperspace Website Repository</a> - Naturally, the entire website is open source as well. sigma13 maintains the official repository; anyone is welcome to fork it, modify, and pull request changes, which will be considered for inclusion.</p>
@@ -26,9 +26,9 @@ include __DIR__.'/../inc/head.inc';
       <p>AI Bots (those that fly around and shoot other players) in Hyperspace are player run. Although there is no explicit list of rules when running a bot in Hyperspace, the following guidelines are to be kept in mind:</p>
       <ul>
         <li>The bot may be forced to spec, or kicked from the zone by a staff member at any time, for any reason.</li>
-        <li>"Farming" bots (either by killing them over and over, or by transfering money from the bot's account to your own) is not allowed. There are multiple safeguards to discourage this behavior, including but not limited to <i>hsd_multiplier</i> and <i>exp_multiplier</i>. If zone staff feel necessary, the offending player may be fined money, degranted items, have their kill counts reset, and possible just <i>?explode</i>d on site.</li>
+        <li>"Farming" bots (either by killing them over and over, or by transfering money from the bot's account to your own) is not allowed. There are multiple safeguards to discourage this behavior, including but not limited to <i>Reward Restrictor</i> (<a href="/ref/glossary.php#ref-gloss-hsd_multiplier">hsd_multiplier</a> and <a href="/ref/glossary.php#ref-gloss-exp_multiplier">exp_multiplier</a>). If zone staff feel necessary, the offending player may be fined money, degranted items, have their kill counts reset, and possible just <code>?explode</code>d on site.</li>
         <li>Bots should not be annoying. Bots may "taunt," however the 'cooldown' period should be set to a reasonable length of time. Real players can be annoying enough as it is.</li>
-        <li>Bots should identify themselves as bots by responding to the <i>!owner</i> command with the player name of the bot's operator.</li>
+        <li>Bots should identify themselves as bots by responding to the <code>!owner</code> command with the player name of the bot's operator.</li>
       </ul>
       <h3>Common Bots</h3>
       <p>The following are the AI bots can sometimes be found in the zone, and their owners/operators.</p>
@@ -68,6 +68,10 @@ include __DIR__.'/../inc/head.inc';
               <td>Baby Bot Back, Botham Knight</td>
             </tr>
             <tr>
+              <td>Saiyan Prince</td>
+              <td>Bringer of Rain, Pabl0 Escobar</td>
+            </tr>
+            <tr>
               <td>sigma13</td>
               <td>dosed, desod</td>
             </tr>
@@ -86,7 +90,7 @@ include __DIR__.'/../inc/head.inc';
           <tbody>
             <tr>
               <td>UB-Picobot</td>
-              <td>Picobot tracks win/loss/suicide numbers and ratios, as well as providing time-tracking alerts for items such as Antideath. PM UB-Picobot <i>!help</i> for a list of commands.</td>
+              <td>Picobot tracks win/loss/suicide numbers and ratios, as well as providing time-tracking alerts for items such as Antideath. PM UB-Picobot <code>!help</code> for a list of commands.</td>
             </tr>
             <tr>
               <td>&lt;Cobalt Mk2&gt;<br>

@@ -14,6 +14,8 @@
               <li><a href="/intro.php#history">History</a></li>
               <li><a href="/intro.php#gameplay">Getting Started</a> (Tutorials)</li>
               <li><a href="/intro.php#commands">Common Commands</a></li>
+              <li><a href="/intro.php#arenas">Arenas</a></li>
+              <li><a href="/intro.php#locations">Key Locations</a></li>
             </ul>
           </li>
           <li>Reference

@@ -55,6 +55,7 @@ function togglemenu() {
 onload = function(e) {
   var toggles = document.getElementsByClassName('slideout-toggle');
   for (var i = 0; i < toggles.length; ++i) {
+    //toggles[i].addEventListener('click', togglemenu);
     toggles[i].addEventListener('click', togglemenu);
   }
 }

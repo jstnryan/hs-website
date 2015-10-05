@@ -3,8 +3,9 @@
             <a id="about-link" class="nav-category" href="/intro.php">Introduction</a>
             <ul class="sub-links" id="about-links">
               <li><a href="/intro.php#about">About</a></li>
-              <li><a href="/intro.php#history">History</a></li>
+              <!--<li><a href="/intro.php#history">History</a></li>-->
               <li><a href="/intro.php#gameplay">Gameplay</a></li>
+              <li><a href="/intro.php#commands">Commands</a></li>
             </ul>
           </div>
           <div>
